@@ -1,0 +1,29 @@
+<?php
+namespace app\index\controller;
+use think\Request;
+use JWT\JWT;
+use think\Db;//TP5配置表前缀，但写的时候仍然不能省略前缀
+class Track
+{
+  //修改备注  $user_id   $ticket_id $remark
+    public function update_remark()
+    {
+        $storage=Request::instance();
+        $data=$storage->post();
+        // $where['user_id'] = $data['user_id'];
+        //$where['ticket_id'] =$data['ticket_id'];
+       // $id=Db::table('query_relative')->where($where)->value('name');
+        var_dump($data);
+
+       //var_dump($id);
+        // $res = db('query_relative')->where('id',$data['user_id'])->setField('remark',$data['remark']);
+        //if ($res) {
+             $result['message'] = "修改备注成功";
+
+      //  } else {
+       //     $result['message'] = "修改备注失败";
+       //  }
+         exit(json_encode($result,JSON_UNESCAPED_UNICODE)) ;
+    }
+}
+?>

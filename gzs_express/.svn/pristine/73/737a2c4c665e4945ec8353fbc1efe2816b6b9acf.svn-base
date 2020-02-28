@@ -1,0 +1,60 @@
+<include file="Public:doctype" />
+<html lang="en">
+<head>
+    <include file="Public:baseHead" />
+</head>
+<body>
+<include file="Public:nav"/>
+<div class="formbody">
+
+    <div class="formtitle"><span>{$title}</span></div>
+
+    <div class="tab mt10" id="tabid1">
+        <form class="mainform" method="post" action="{:U('Config/doEdit')}">
+            <table class="formtable">
+                <tbody>
+
+                <input name="code" type="hidden" value="{$conf.code}">
+                <tr id="" class="">
+                    <td class="ft_title">网站名称</td>
+
+                    <td colspan="3">
+                        <input value="{$conf.webName}" name="webName" maxlength="50" datatype="*" class="bds inp  w500" nullmsg="请填写网站名称（必填）" placeholder="请填写网站名称（必填）" type="text">
+                        <font class="need show_0">*</font><span class="Validform_checktip">请填写网站名称（必填）</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">域名地址</td>
+                    <td colspan="3">
+                        <input value="{$conf.serverName}" name="serverName" maxlength="50" class="bds inp  w500" nullmsg="请填写域名，格式如tourdxs.com" placeholder="请填写域名，格式如tourdxs.com" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写域名，格式如tourdxs.com</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">技术支持</td>
+                    <td colspan="3">
+                        <input value="{$conf.support}" name="support" maxlength="50" class="bds inp  w500" nullmsg="请填写技术支持" placeholder="请填写技术支持" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写技术支持</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <input type="submit" value="保存" class="btn button_primary btnsave" status="0">
+                        <input type="button" value="返回" class="btn button_success btnsave" onclick="javascript:history.go(-1)" />
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <div class="h10"></div>
+</div>
+
+</div>
+
+<include file="Public:validformScript" />
+</body>
+</html>

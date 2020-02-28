@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<include file="Public:baseHead"/>
+
+	<script type="text/javascript">
+		$(function(){
+			//导航切换
+			$(".menuson li").click(function(){
+				$(".menuson li.active").removeClass("active")
+				$(this).addClass("active");
+			});
+
+			$('.title').click(function(){
+				var $ul = $(this).next('ul');
+				$('dd').find('ul').slideUp();
+				if($ul.is(':visible')){
+					$(this).next('ul').slideUp();
+				}else{
+					$(this).next('ul').slideDown();
+				}
+			});
+		})
+	</script>
+
+
+</head>
+
+<body style="background:#f0f9fd;">
+<div class="lefttop"><span></span>功能菜单</div>
+
+<dl class="leftmenu">
+
+	<dd>
+		<div class="title">
+			<span><img src="__PUBLIC__/Admin/images/leftico01.png"/></span>用户管理
+		</div>
+		<ul class="menuson">
+
+			<li><cite></cite><a href="{:U('Admin/index')}" target="rightFrame">管理员管理</a><i></i></li>
+			<li><cite></cite><a href="{:U('User/index')}" target="rightFrame">用户管理</a><i></i></li>
+			<!--<li><cite></cite><a href="{:U('User/index')}" target="rightFrame">车主管理</a><i></i></li>-->
+		</ul>
+	</dd>
+
+	<dd>
+		<div class="title">
+			<span><img src="__PUBLIC__/Admin/images/leftico01.png"/></span>订单管理
+		</div>
+		<ul class="menuson">
+			<li><cite></cite><a href="{:U('Car/index')}" target="rightFrame">车辆列表</a><i></i></li>
+			<li><cite></cite><a href="{:U('Order/index')}" target="rightFrame">订单列表</a><i></i></li>
+			<li><cite></cite><a href="{:U('Spitslot/index')}" target="rightFrame">评论列表</a><i></i></li>
+		</ul>
+	</dd>
+
+	<dd>
+		<div class="title">
+			<span><img src="__PUBLIC__/Admin/images/leftico01.png"/></span>系统配置
+		</div>
+		<ul class="menuson">
+			<li><cite></cite><a href="{:U('Config/webSetting')}" target="rightFrame">网站配置</a><i></i></li>
+
+		</ul>
+	</dd>
+
+</dl>
+
+</body>
+</html>

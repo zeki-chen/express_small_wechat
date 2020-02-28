@@ -1,0 +1,92 @@
+<div id="fade" class="black_overlay"></div>
+<div class="register_div">
+<a href="javascript:void(0)" onclick="close_RegisterHtml()" class="close_login_reg"><img src="__PUBLIC__/Index/images/close.png" alt="cha" class="close_lr_img"></a>
+<form action="{:U('Index/register')}" method="get" class="reg_content_div">
+
+    <h2 class="reg_title">注册</h2>
+    <input type="text" name="tel" class="reg_ipt phone_ipt" placeholder="手机号">
+    <span class="explain">手机号可用于登录、找回密码、接收订单通知等服务</span>
+    <input type="password" name="pwd" placeholder="登录密码" class="reg_ipt password_ipt">
+    <label class="demo--label"><input class="demo--radio"  type="checkbox" name="demo-checkbox1">
+        <span class="demo--checkbox demo--radioInput"></span><span class="show_p">显示密码</span>
+    </label>
+
+    <span class="explain">密码为6-20个字符，可由英文、数字及符号组成</span>
+    <input type="password" name="pwd" placeholder="确认密码" class="reg_ipt con_password_ipt" onBlur=confirmByRegister(this)>
+    <label class="demo--label"><input class="demo--radio" type="checkbox" name="demo-checkbox1">
+        <span class="demo--checkbox demo--radioInput"></span><span class="show_p">显示密码</span>
+    </label>
+    <span class="explain explain1">请再次输入密码</span>
+    <input type="text" name="" placeholder="手机验证码" class="reg_ipt">
+    <button class="phone_check_btn">发送验证码</button>
+    <div class="read_div"><label class="demo--label"><input class="demo--radio" type="checkbox" name="demo-checkbox1">
+        <span class="demo--checkbox demo--radioInput"></span><span class="show_p">我已阅读并同意</span><a href="#" class="denglu">《VRent用户服务协议》</a>
+    </label></div>
+    <button type="submit" class="reg_btn">提交注册</button>
+    <span>已经注册？</span><a href="javascript:void(0)" onclick="show_loginHtml()" class="denglu">请登录</a>
+
+</form>
+</div>
+
+
+<div class="login_div">
+    <a href="javascript:void(0)" onclick="close_loginHtml()" class="close_login_reg"><img src="__PUBLIC__/Index/images/close.png"" alt="cha" class="close_lr_img"></a>
+    <form action="{:U('Index/login')}" method="get" class="login_content_div" >
+        <h2 class="reg_title">登录</h2>
+        <input type="text" name="tel" class="reg_ipt phone_ipt" placeholder="手机号码">
+
+        <input type="password" name="pwd" placeholder="密码登录" class="reg_ipt password_ipt">
+        <label class="demo--label"><input class="demo--radio"  type="checkbox" name="demo-checkbox1">
+            <span class="demo--checkbox demo--radioInput"></span><span class="show_p">显示密码</span>
+        </label>
+
+        <label class="demo--label"><input class="demo--radio"  type="checkbox" name="demo-checkbox1">
+            <div class="login_n"><span class="demo--checkbox demo--radioInput auto_login"></span><span class="show_p">下次自动登录</span><a href="#" class="denglu forget_pw">忘记密码</a></div>
+        </label>
+
+        <button type="submit" class="reg_btn">会员登录</button>
+        <span class="login_expalin">还没有账号?</span><a href="javascript:void(0)" onclick="show_RegisterHtml()" class="denglu login_expalin">现在注册</a>
+
+    </form>
+</div>
+
+<script>
+    function confirmByRegister(obj){
+        var pass=$('.password_ipt').val();
+        var con_pass=$(obj).val();
+        console.log(pass);
+        console.log(con_pass);
+        if(pass!=con_pass){
+            //$.trim(pass) != $.trim(con_pass)
+            console.log("no same");
+            $('.explain1').text("两次密码不一致，请重新输入密码");
+            $('.explain1').css("color","red");
+            $('.con_password_ipt').val("");
+            return false;
+        }else{
+            $('.explain1').text("");
+            $('.explain1').css("color","#3d3d3d");
+        }
+
+    }
+
+    function show_loginHtml(){
+        $('.black_overlay').fadeIn();
+        $('.register_div').fadeOut();
+        $('.login_div').fadeIn();
+    }
+
+    function show_RegisterHtml(){
+        $('.black_overlay').fadeIn();
+        $('.register_div').fadeIn();
+        $('.login_div').fadeOut();
+    }
+    function close_loginHtml(){
+        $('.black_overlay').fadeOut();
+        $('.login_div').fadeOut();
+    }
+    function close_RegisterHtml(){
+        $('.black_overlay').fadeOut();
+        $('.register_div').fadeOut();
+    }
+</script>

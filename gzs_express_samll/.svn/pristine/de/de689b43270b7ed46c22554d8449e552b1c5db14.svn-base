@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tracking/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "快递查询",
+    "navigationBarTextStyle": "black"
+  }
+}

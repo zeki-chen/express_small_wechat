@@ -1,0 +1,695 @@
+[ 2018-05-21T20:23:51+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-21T20:43:11+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined variable: map D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Index\Controller\SearchController.class.php 第 21 行.
+SQL: SELECT * FROM `v_car` ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:04:33+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-21T21:12:33+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0230s ]
+NOTIC: [8] Undefined variable: map D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Index\Controller\SearchController.class.php 第 21 行.
+SQL: SELECT * FROM `v_car` ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:15:47+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/brand/%E8%B7%AF%E8%99%8E.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%路虎%' ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:15:53+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/gear/%E8%87%AA%E5%8A%A8%E6%A1%A3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%自动档%' ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:16:22+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/gear/%E8%87%AA%E5%8A%A8%E6%A1%A3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%自动档%' ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:16:25+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/brand/%E8%B7%AF%E8%99%8E.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%路虎%' ORDER BY addtime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:16:57+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/brand/%E5%A4%A7%E4%BC%97.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%大众%' ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-21T21:17:00+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/brand/%E8%B7%AF%E8%99%8E.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%路虎%' ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-21T21:17:01+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/brand/%E8%B7%AF%E8%99%8E.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%路虎%' ORDER BY addtime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-21T21:17:11+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/brand/%E5%A4%A7%E4%BC%97.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%大众%' ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:17:14+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/brand/%E8%B7%AF%E8%99%8E.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%路虎%' ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:17:16+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/gear/%E6%89%8B%E5%8A%A8%E6%A1%A3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%手动档%' ORDER BY addtime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:17:27+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/gear/%E8%87%AA%E5%8A%A8%E6%A1%A3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%自动档%' ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:21:27+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search/brand/%E8%B7%AF%E8%99%8E.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `v_car` WHERE `intro` LIKE '%路虎%' ORDER BY addtime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:24:40+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-21T21:24:46+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined variable: map D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Index\Controller\SearchController.class.php 第 21 行.
+SQL: SELECT * FROM `v_car` ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:24:52+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0320s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,car.seat_id AS seat_id,car.gear_id AS gear_id,car.carkind_id AS carkind_id,car.window_id AS window_id,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0320s ]
+SQL: SELECT spitslot.spitslot_id AS spitslot_id,spitslot.order_id AS order_id,spitslot.user_id AS user_id,spitslot.grade AS grade,spitslot.content AS content,spitslot.addtime AS addtime,spitslot.updatetime AS updatetime,spitslot.car_id AS car_id,user.user_name AS user_name,user.tel AS tel,user.headimgurl AS headimgurl,user.true_name AS true_name FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '5'  [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_carpic` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `v_carpic` WHERE `car_id` = 5 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 117 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 254 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:28:35+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined variable: map D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Index\Controller\SearchController.class.php 第 21 行.
+SQL: SELECT * FROM `v_car` ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:28:44+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-21T21:28:49+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: map D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Index\Controller\SearchController.class.php 第 21 行.
+SQL: SELECT * FROM `v_car` ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:28:52+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0190s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,car.seat_id AS seat_id,car.gear_id AS gear_id,car.carkind_id AS carkind_id,car.window_id AS window_id,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '5' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0190s ]
+SQL: SELECT spitslot.spitslot_id AS spitslot_id,spitslot.order_id AS order_id,spitslot.user_id AS user_id,spitslot.grade AS grade,spitslot.content AS content,spitslot.addtime AS addtime,spitslot.updatetime AS updatetime,spitslot.car_id AS car_id,user.user_name AS user_name,user.tel AS tel,user.headimgurl AS headimgurl,user.true_name AS true_name FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '5'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '5' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_carpic` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `v_carpic` WHERE `car_id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 117 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 254 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-21T21:29:23+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: map D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Index\Controller\SearchController.class.php 第 21 行.
+SQL: SELECT * FROM `v_car` ORDER BY addtime desc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:29:24+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 95 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-21T21:29:37+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: map D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Index\Controller\SearchController.class.php 第 21 行.
+SQL: SELECT * FROM `v_car` ORDER BY addtime desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 93 行.
+NOTIC: [8] Undefined variable: page D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\fc5e652f5ff0ce29f8dec571e8876eb9.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

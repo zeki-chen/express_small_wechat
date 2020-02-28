@@ -1,0 +1,413 @@
+/* pages/tracking/index.wxss */
+
+page {
+  height: 100%;
+  position: relative;
+  background-color: #eee;
+  font-family: 'weiruanyahei';
+}
+
+.over_hid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav-wrap {
+  width: 100%;
+  height: 165rpx;
+  overflow: hidden;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav_bg {
+  width: 100%;
+  height: 165rpx;
+  z-index: -1;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.nav-title {
+  height: 160rpx;
+  line-height: 180rpx;
+  text-align: left;
+  font-family: 'weiruanyahei';
+  font-size: 34rpx;
+  color: #fff;
+  padding-left: 63rpx;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  top: 78rpx;
+  left: 30rpx;
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  cursor: pointer;
+  border-left: 4rpx solid #fff;
+  border-bottom: 4rpx solid #fff;
+  transform: rotate(45deg);
+  padding: 0rpx 0 5rpx 5rpx;
+}
+
+.blank{
+  width: 100%;
+  height: 209rpx;
+  background: #eee;
+}
+
+.content {
+  width: 100%;
+  background: #eee;
+  padding: 0 0 90rpx 0;
+  margin-bottom: 40rpx;
+}
+
+.con_null {
+  height: 723rpx;
+  background: #fff;
+  text-align: center;
+}
+
+.trBg {
+  width: 443rpx;
+  height: 426rpx;
+   padding-left: 42rpx; 
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 59rpx;
+}
+
+.trTip {
+  width: 505rpx;
+  height: 26rpx;
+  font-size: 26rpx;
+  color: #989898;
+}
+
+.con_wrap {
+  width: 100%;
+  background: #fff;
+}
+
+.label_belong {
+  width: 692rpx;
+  margin: 0 auto;
+  padding: 26rpx 0;
+  font-size: 34rpx;
+  display: flex;
+  border-bottom: 2rpx dashed #989898;
+}
+
+.sign {
+  width: 34rpx;
+  height: 34rpx;
+  margin-top: 7.5rpx;
+}
+
+.belong {
+  margin-left: 30rpx;
+  margin-right: 28rpx;
+  color: #170000;
+}
+
+.remark {
+  color: rgb(247, 139, 77);
+}
+
+.track_num {
+  color: #989898;
+  width: 315rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copy {
+  font-size: 24rpx;
+  color: #282f66;
+  margin-left: 21rpx;
+  margin-top: 10rpx;
+  cursor: pointer;
+}
+
+.item-contain {
+  width: 692rpx;
+  margin: 24rpx auto;
+}
+
+.item {
+  display: flex;
+}
+
+.item-left {
+  width: 15rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-right {
+  flex: 1;
+  margin-left: 35rpx;
+}
+
+.item-top {
+  height: 30rpx;
+  position: relative;
+  border-right: 1rpx solid #645e91;
+}
+
+.item-bottom {
+  flex: 1;
+  border-right: 1rpx solid #645e91;
+}
+
+.circle {
+  width: 8rpx;
+  height: 8rpx;
+  position: absolute;
+  right: 0.5rpx;
+  bottom: 0;
+  background: #645491;
+  border-radius: 50%;
+  transform: translate(3px, 3px);
+}
+
+.noTopLine, .noBottomLine {
+  border: none;
+}
+
+.terminate {
+  color: #000;
+  font-size: 34rpx;
+}
+
+.txt {
+  font-size: 28rpx;
+  color: #989898;
+}
+
+.black {
+  color: #281e66;
+}
+
+.box {
+  color: #989898;
+  font-size: 22rpx;
+  margin-top: 18rpx;
+  margin-bottom: 38rpx;
+}
+
+.date {
+  margin-right: 28rpx;
+}
+
+/* 底部选项 */
+
+.tabBar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.wrap {
+  display: flex;
+  position: relative;
+  height: 151rpx;
+}
+
+.tabBar_bg {
+  width: 100%;
+  height: 160rpx;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+ .tab_wp{
+  width: 100%;
+  display: flex;
+} 
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15%;
+  margin-top: 35rpx; 
+  margin-right: 9%;  
+}
+
+.link_wp{
+  position: relative;
+}
+
+.btn_share{
+  width: 41rpx;
+  height: 100rpx;
+  background: rgba(0, 0, 0,0);
+  position: absolute;
+  top: 10rpx;
+  left: -5rpx;
+}
+
+.desc {
+  font-size: 26rpx;
+  color: #fff;
+  margin-top: 8rpx;
+}
+
+.Remarks {
+  width: 43rpx;
+  height: 41rpx;
+  margin-left: 6rpx;
+}
+
+.link{
+  width: 41rpx;
+  height: 41rpx;
+  margin-left: 2rpx;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0rpx;
+}
+
+.main {
+  width: 536rpx;
+  height: 206.5rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  position: absolute;
+  top: 568rpx;
+  left: 100rpx;
+}
+
+.main_text {
+  height: 103rpx;
+  border-bottom: 1rpx solid #d4d4d4;
+  line-height: 103rpx;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  height: 103rpx;
+  justify-content: center;
+}
+
+.sure, .wait {
+  height: 103rpx;
+  line-height: 103rpx;
+  text-align: center;
+  width: 267rpx;
+  cursor: pointer;
+}
+
+.sure {
+   border-radius: 0rpx; 
+  color: #be1919;
+  border-left: 1rpx solid #d4d4d4;
+}
+
+.tips {
+  width: 100%;
+  position: absolute;
+  bottom: 300rpx;
+  left: 0;
+}
+
+.tipContent {
+  width: 250rpx;
+  height: 80rpx;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 30rpx;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+  letter-spacing: 4rpx;
+  font-size: 36rpx;
+  padding: 10rpx 20rpx;
+  margin: 0 auto;
+}
+
+.notes {
+  position: absolute;
+  top: 535rpx;
+  left: 107rpx;
+  width: 536rpx;
+  height: 313rpx;
+  background: #fff;
+  border-radius: 26rpx;
+  display: none;
+}
+
+.noteTitle {
+  padding: 27rpx 0;
+  border-bottom: 0.5rpx solid #c2c2c2;
+}
+
+.noteTitle text {
+  font-size: 35rpx;
+  color: #000;
+  display: block;
+  text-align: center;
+  margin-bottom: 27rpx;
+}
+
+.noteValue {
+  width: 450rpx;
+  height: 90rpx;
+  border: 0.5rpx solid #c2c2c2;
+  border-radius: 32rpx;
+  padding-left: 20rpx;
+  font-size: 36rpx;
+  margin-left: 32rpx;
+}
+
+button::after {
+  border: none;
+}
+
+button {
+  background-color: #fff;
+}
+
+.note_btn {
+  display: flex;
+}
+
+button {
+  border-radius: 26rpx;
+}
+
+.nbtn {
+  width: 267.5rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hr {
+  border-left: 0.5rpx solid #c2c2c2;
+}
+
+#note_wait {
+  color: #838282;
+}
+
+#note_sure {
+  color: #be1919;
+}

@@ -1,0 +1,551 @@
+[ 2018-11-09T21:39:59+08:00 ] ::1 /czq/Vrent/index.php/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.011001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.011001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:40:15+08:00 ] ::1 /czq/Vrent/index.php/Admin/Index/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_admin` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `v_admin` WHERE `aname` = '13415626432' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' AND `valid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-11-09T21:40:20+08:00 ] ::1 /czq/Vrent/index.php/Admin/Index/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_admin` WHERE `aname` = 'admin' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' AND `valid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-11-09T21:40:29+08:00 ] ::1 /czq/Vrent/index.php/Admin/Index/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_admin` WHERE `aname` = '13415626432' AND `pwd` = 'e10adc3949ba59abbe56e057f20f883e' AND `valid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-11-09T21:40:34+08:00 ] ::1 /czq/Vrent/index.php/Admin/Index/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_admin` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `v_admin` WHERE `aname` = '13415626432' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' AND `valid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-11-09T21:41:00+08:00 ] ::1 /czq/Vrent/index.php/Admin/Index/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_admin` WHERE `aname` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' AND `valid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-11-09T21:41:02+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:03+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:04+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:05+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:39+08:00 ] ::1 /czq/Vrent/index.php/Admin/Car/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `v_carkind` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `v_brand` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `v_gear` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `v_window` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `v_seat` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,car.seat_id AS seat_id,car.gear_id AS gear_id,car.carkind_id AS carkind_id,car.window_id AS window_id,car.brand_id AS brand_id,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name,carkind.carkind_name AS carkind_name,brand.brand_name AS brand_name,gear.gear_name AS gear_name,window.window_name AS window_name,seat.seat_name AS seat_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id ORDER BY car.car_id desc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:40+08:00 ] ::1 /czq/Vrent/index.php/Admin/Car/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_carkind` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_brand` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_gear` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_window` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_seat` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,car.seat_id AS seat_id,car.gear_id AS gear_id,car.carkind_id AS carkind_id,car.window_id AS window_id,car.brand_id AS brand_id,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name,carkind.carkind_name AS carkind_name,brand.brand_name AS brand_name,gear.gear_name AS gear_name,window.window_name AS window_name,seat.seat_name AS seat_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id ORDER BY car.car_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-09T21:41:41+08:00 ] ::1 /czq/Vrent/index.php/Admin/Car/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `v_carkind` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `v_brand` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_gear` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_window` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_seat` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,car.seat_id AS seat_id,car.gear_id AS gear_id,car.carkind_id AS carkind_id,car.window_id AS window_id,car.brand_id AS brand_id,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name,carkind.carkind_name AS carkind_name,brand.brand_name AS brand_name,gear.gear_name AS gear_name,window.window_name AS window_name,seat.seat_name AS seat_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id ORDER BY car.car_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-09T21:41:42+08:00 ] ::1 /czq/Vrent/index.php/Admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_orders` [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_orders orders LEFT JOIN v_user user ON orders.user_id=user.user_id LEFT JOIN v_car car ON orders.user_id=car.car_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT orders.order_id AS order_id,orders.user_id AS user_id,orders.car_id AS car_id,orders.sent_id AS sent_id,orders.senttime AS senttime,orders.sentdate AS sentdate,orders.cash AS cash,orders.vaild AS vaild,orders.remarks AS remarks,orders.addtime AS addtime,orders.updatetime AS updatetime,orders.ext AS ext,user.user_name AS user_name,user.tel AS tel,user.true_name AS true_name,car.car_number AS car_number,car.intro AS intro FROM v_orders orders LEFT JOIN v_user user ON orders.user_id=user.user_id LEFT JOIN v_car car ON orders.user_id=car.car_id ORDER BY orders.addtime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:43+08:00 ] ::1 /czq/Vrent/index.php/Admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_orders` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_orders orders LEFT JOIN v_user user ON orders.user_id=user.user_id LEFT JOIN v_car car ON orders.user_id=car.car_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT orders.order_id AS order_id,orders.user_id AS user_id,orders.car_id AS car_id,orders.sent_id AS sent_id,orders.senttime AS senttime,orders.sentdate AS sentdate,orders.cash AS cash,orders.vaild AS vaild,orders.remarks AS remarks,orders.addtime AS addtime,orders.updatetime AS updatetime,orders.ext AS ext,user.user_name AS user_name,user.tel AS tel,user.true_name AS true_name,car.car_number AS car_number,car.intro AS intro FROM v_orders orders LEFT JOIN v_user user ON orders.user_id=user.user_id LEFT JOIN v_car car ON orders.user_id=car.car_id ORDER BY orders.addtime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:44+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:46+08:00 ] ::1 /czq/Vrent/index.php/Admin/Order/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_orders` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_orders orders LEFT JOIN v_user user ON orders.user_id=user.user_id LEFT JOIN v_car car ON orders.user_id=car.car_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT orders.order_id AS order_id,orders.user_id AS user_id,orders.car_id AS car_id,orders.sent_id AS sent_id,orders.senttime AS senttime,orders.sentdate AS sentdate,orders.cash AS cash,orders.vaild AS vaild,orders.remarks AS remarks,orders.addtime AS addtime,orders.updatetime AS updatetime,orders.ext AS ext,user.user_name AS user_name,user.tel AS tel,user.true_name AS true_name,car.car_number AS car_number,car.intro AS intro FROM v_orders orders LEFT JOIN v_user user ON orders.user_id=user.user_id LEFT JOIN v_car car ON orders.user_id=car.car_id ORDER BY orders.addtime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: rid D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+NOTIC: [8] Undefined index: content D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Admin\18bc66a7b6334412ab8e61a2539ecfbd.php 第 58 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:41:47+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-09T21:41:48+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-09T21:41:49+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/left.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-09T21:41:50+08:00 ] ::1 /czq/Vrent/index.php/Admin/Main/center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-11-09T21:42:38+08:00 ] ::1 /czq/Vrent/index.php/Admin/Car/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_carkind` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_brand` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_gear` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_window` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_seat` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,car.seat_id AS seat_id,car.gear_id AS gear_id,car.carkind_id AS carkind_id,car.window_id AS window_id,car.brand_id AS brand_id,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name,carkind.carkind_name AS carkind_name,brand.brand_name AS brand_name,gear.gear_name AS gear_name,window.window_name AS window_name,seat.seat_name AS seat_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id ORDER BY car.car_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-11-09T21:42:39+08:00 ] ::1 /czq/Vrent/index.php/Admin/Car/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_config` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `v_config` WHERE `code` = 'web' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_carkind` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_brand` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_gear` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_window` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `v_seat` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,car.seat_id AS seat_id,car.gear_id AS gear_id,car.carkind_id AS carkind_id,car.window_id AS window_id,car.brand_id AS brand_id,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name,carkind.carkind_name AS carkind_name,brand.brand_name AS brand_name,gear.gear_name AS gear_name,window.window_name AS window_name,seat.seat_name AS seat_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id ORDER BY car.car_id desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

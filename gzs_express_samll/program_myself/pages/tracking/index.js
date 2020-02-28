@@ -1,0 +1,328 @@
+// pages/tracking/index.js
+const app = getApp();
+var _this;
+// var token = app.globalData.token;
+var getToken = wx.getStorageSync("token");//获取缓存
+
+Page({
+  data: {
+    detail: '',
+    remark: '',
+    border: '1px solid #000',
+    picWidth: '37rpx',
+    picHeight: '41rpx',
+    subleft: '8rpx',
+    subtop: '35rpx',
+    remarkTop: '0rpx',
+    layerDisplay: "none",
+    mainLayer: "none",
+    tabBar_overflow: "hidden",
+    tabBar_bg: '../../images/bar_bg.png',
+    ask_info: '是否订阅此物流',
+    subscribeImg: "../../images/Subscribe.png",
+    tips: '',
+    tipsBlock: 'none',
+    over_hid: "",
+    show: "none",
+    noteValue: "",
+    bool: true,
+    loadingHidden: true
+  },
+
+  back: function() {
+    // wx.navigateBack({
+    //   delta: -1
+    // });
+    wx.navigateTo({
+      url: '../index/index',
+    })
+  },
+
+
+
+  copy: function(e) {
+    var ticket_id = e.currentTarget.dataset.text
+    wx.setClipboardData({
+      data: ticket_id,
+      success: function(res) {
+        wx.getClipboardData({
+          success: function(res) {
+            wx.showToast({
+              title: '复制成功',
+            });
+          }
+        });
+      }
+    })
+  },
+
+  subscription: function() {
+
+    let img = '../../images/Subscribe.png';
+    let imged = '../../images/Subscribed.png';
+
+    var State = _this.data.detail.State;
+
+    if (State == 2 || State == 3 || State == 4) {
+
+      if (_this.data.subscribeImg == imged) {
+        let info = '是否取消订阅'
+        _this.subs_info(info);
+      } else {
+        let info = '是否订阅此物流'
+        _this.subs_info(info);
+      }
+
+    } else {
+      return false;
+    }
+
+  },
+
+  subs_info: function(ev) {
+    _this.setData({
+      ask_info: ev,
+      layerDisplay: 'block',
+      over_hid: "over_hid",
+      mainLayer: 'block'
+    });
+  },
+
+  subs_sure: function(ev) {
+
+    var formID = ev.detail.formId;
+
+    /*   
+       flag    1:订阅    0:取消订阅   
+       取消订阅    
+           code:  10000   info:'订阅成功'
+           code:  10001   info:'订阅失败'
+           code:  10002   info:'取消订阅成功'
+           code:  10003   info:'取消订阅失败'
+   */
+    let flag;
+    let ask_info = _this.data.ask_info;
+    let regMatch = ask_info.match(RegExp('取消'));
+
+    if (regMatch) {
+      flag = 0;
+    } else {
+      flag = 1;
+    }
+
+    var ticket_id = _this.data.detail.LogisticCode;
+
+    wx.request({
+
+      url: 'https://ssl.ycxxkj.com/gzs_express/sudiproject/tp5/public/index.php/index/Track/subscribe',
+
+      method: 'POST',
+
+      data: {
+        token: getToken,
+        flag: flag,
+        ticket_id: ticket_id,
+        formid: formID,
+        last: _this.data.detail.Traces[0].AcceptStation
+      },
+
+      success: res => {
+
+        _this.wait();
+
+        let code = res.data.code,
+          message = res.data.message;
+
+        if (code == 10000) {
+          _this.subsSetData();
+          _this.interval(message);
+        } else if (code == 10001) {
+          _this.interval(message);
+        } else if (code == 10002) {
+          _this.setData({
+            picWidth: '37rpx',
+            picHeight: '41rpx',
+            subleft: '8rpx',
+            subtop: '35rpx',
+            remarkTop: '0rpx',
+            subscribeImg: '../../images/Subscribe.png',
+            tabBar_overflow: "hidden",
+            tabBar_bg: '../../images/bar_bg.png'
+          });
+
+          _this.interval(message);
+
+        } else if (code == 10003) {
+          _this.interval(message);
+        }
+      },
+
+      fail: res => {
+        console.log(res);
+      }
+
+    });
+
+  },
+
+  note: function() {
+
+    let state = _this.data.detail.State;
+
+    if (state == 2 || state == 3 || state == 4) {
+      _this.setData({
+        over_hid: "over_hid",
+        layerDisplay: "block",
+        show: "block"
+      });
+    } else {
+      return false;
+    }
+
+  },
+
+  note_sure: function(ev) {
+
+    var remark_info = ev.detail.value.notes;
+    var ticket_id = _this.data.detail.LogisticCode
+
+    if (ev) {
+      wx.request({
+        url: 'https://ssl.ycxxkj.com/gzs_express/sudiproject/tp5/public/index.php/index/Track/update_remark',
+        method: 'post',
+        data: {
+          remark: remark_info,
+          token: getToken,
+          ticket_id: ticket_id
+        },
+
+        success: obj => {
+
+          _this.wait();
+
+          if (obj.data.message == "修改备注失败") {
+            _this.interval(obj.data.message);
+            return false;
+          }
+
+          _this.setData({
+            remark: remark_info,
+          });
+
+          _this.interval(obj.data.message);
+
+        },
+
+        fail: res => {
+          console.log(res);
+        },
+
+      });
+
+    } else {
+      _this.interval('备注不能为空');
+    }
+
+  },
+
+  wait: function() {
+    _this.setData({
+      layerDisplay: 'none',
+      mainLayer: 'none',
+      over_hid: "",
+      show: "none"
+    });
+  },
+
+  interval: function(remark_info) {
+    _this.wait();
+    _this.interval_fn(remark_info);
+  },
+
+  interval_fn: function(remark_info) {
+    _this.setData({
+      tips: remark_info,
+      tipsBlock: 'block',
+    });
+    setTimeout(function() {
+      _this.setData({
+        tipsBlock: 'none',
+      });
+    }, 2000);
+  },
+
+  subsSetData: function() {
+    _this.setData({
+      picWidth: '53rpx',
+      picHeight: '59rpx',
+      subleft: '0rpx',
+      remarkTop: '0rpx',
+      subtop: '23rpx',
+      subscribeImg: '../../images/Subscribed.png',
+      tabBar_overflow: 'default',
+      tabBar_bg: '../../images/tabBar_bg.png'
+    });
+  },
+
+  /* 页面相关事件处理函数 -- 监听页面分享 */
+  onShareAppMessage: function(res) {
+    var ticket_id = _this.data.detail.LogisticCode;
+    if (res.from === 'button') {}
+    return {
+      title: '转发',
+      path: '/pages/tracking/index?detail=' + ticket_id,
+      success: function(res) {
+        console.log('YES');
+      }
+    }
+  },
+
+  /* 生命周期函数--监听页面加载 */
+  onLoad: function(options) {
+
+    getToken = wx.getStorageSync("token");
+
+    _this = this;
+
+    var ev = options.detail; // ev --> ticket_id
+
+    if (getToken) {
+      _this.tokenRequest(getToken, ev);
+    } 
+    else {
+      app.globalData.tokenCallback = function() {
+        var token = app.globalData.token;
+        wx.setStorageSync("token", token);
+        _this.tokenRequest(token, ev);
+      }
+    }
+
+  },
+
+  tokenRequest: function(token, ev) {
+
+    wx.request({
+      method: 'POST',
+      url: 'https://ssl.ycxxkj.com/gzs_express/sudiproject/tp5/public/index.php/index/Index/search',
+      data: {
+        token,
+        ev
+      },
+      success: res => {
+        var data = res.data;
+        console.log(data);
+        data.Traces.reverse();
+        _this.setData({
+          detail: data
+        });
+      },
+      fail: res => {
+        console.log(res);
+      }
+    });
+
+  }
+
+
+
+});

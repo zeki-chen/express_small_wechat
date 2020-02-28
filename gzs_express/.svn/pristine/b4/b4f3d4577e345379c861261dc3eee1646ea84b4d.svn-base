@@ -1,0 +1,10 @@
+<script type="text/javascript" src="__PUBLIC__/Index/js/jquery-1.9.1.min.js"></script>
+<link href="__PUBLIC__/Validform_v5.3.2/css/validform.css" rel="stylesheet" />
+<script type="text/javascript" src="__PUBLIC__/layer/layer/layer.js"></script>
+<script src="__PUBLIC__/Admin/js/common.js"></script>
+<script src="__PUBLIC__/Index/js/jquery.lazyload.js?v=3" type="text/javascript" charset="utf-8"></script>
+<script src="__PUBLIC__/Validform_v5.3.2/js/Validform_v5.3.2_min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/lang/zh-CN.js"></script>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/plugins/code/prettify.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/kindeditor-master/themes/default/default.css"/>

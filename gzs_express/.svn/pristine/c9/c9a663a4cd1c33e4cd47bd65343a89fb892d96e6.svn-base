@@ -1,0 +1,123 @@
+<?php
+namespace app\index\controller;
+use KdApiSearch\KdApi;
+use KdApiOrderSearch\KdApiCompanySearch;
+use think\Request;
+use JWT\JWT;
+use think\Db;
+class Index {
+
+	public function valid(){
+
+		$storage=Request::instance();
+
+		$token=$storage->post();
+
+		if(empty($token))  return ;
+
+		$obj = new Jwt();
+
+    	$bool=$obj->verifyToken($token['token']['data']);
+    	
+    	if($bool){
+    		exit(json_encode('true'));
+    	}else
+
+    	exit(json_encode('false'));
+	}
+
+	//引入快递鸟的接口
+	public function search(){
+		$tokenObj=new Jwt(); 
+
+		$view = new View();
+
+		$post=Request::instance();
+
+		$Klist=$post->post();//得到快递单号  
+
+		$token=$tokenObj->verifyToken($Klist['token']['data']);
+		
+		// var_dump($token);
+		//先去数据库查找
+		$res=Db::table('wx_ticket')
+				->where('ticket_id',$Klist['ev']['detail']['value'])
+				->find();
+
+		$uesr=Db::table('wx_user')
+				->where('openid','eq',$token['openid'])
+				->find();
+
+		if($res){
+
+			if((time()->strtotime($res['curquerytime']))/3600>=2)
+			{
+				$arr=$this->useKdApi($Klist);//调用接口后更新库返回前台数据
+
+				Db::table('wx_query_relative')
+				->where('user_id','eq',$user['user_id'])
+				->update('uptime',date("Y-m-d H:i:s"));
+
+				Db::table('wx_ticket')
+				->where('ticket_id',$Klist['ev']['detail']['value'])->update(['uptime'=>date("Y-m-d H:i:s"),
+							  'curquerytime'=>date("Y-m-d H:i:s")]);
+
+				$this->assign('res',$arr);
+
+			}else{
+				$this->assign('res',$res);//存在结果集并且数据没有更新就直接输出
+			}
+
+		}else{
+
+			$arr=$this->useKdApi($Klist);//调用接口后存库
+
+			Db::table('wx_query_relative')
+				->insert(['addtime'=>date("Y-m-d H:i:s"),
+						
+						 'user_id'=>$user['user_id'],
+
+						 'ticket_id'=>$Klist['ev']['detail']['value']
+
+					]);
+
+			Db::table('wx_ticket')
+				->insert(['addtime'=>date("Y-m-d H:i:s"),
+						
+						 'curquerytime'=>date("Y-m-d H:i:s"),
+
+						 'ticket_id'=>$Klist['ev']['detail']['value']
+
+					]);
+
+			$this->assign('res',$arr);
+
+		}
+	}
+
+	public function useKdApi($Klist){
+
+		$KdCompanyObj=new KdApiCompanySearch($Klist['ev']['detail']['value']);
+		
+		//获得公司编码
+		$companyNum=$KdCompanyObj->getOrderTracesByJson();
+
+		$companyNum=json_decode($companyNum,JSON_OBJECT_AS_ARRAY);
+
+		$searchObj = new KdApi($companyNum['Shippers'][0]['ShipperCode'],$Klist['ev']['detail']['value']);
+
+		$resJson= $searchObj->getOrderTracesByJson();
+
+		return $resJson;
+	}
+
+
+	public function test(){
+		$post=Request::instance();
+
+		$Klist=$post->post();//得到快递单号  
+		
+		var_dump($Klist['ev']['detail']['value']);
+		var_dump($Klist['token']['data']);
+	}
+}

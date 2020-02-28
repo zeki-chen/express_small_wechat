@@ -1,0 +1,58 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.1",
+	"appid": "wx155a0764c5a30ef2",
+	"projectname": "program_myself",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/tracking/index",
+					"query": "detail={\"LogisticCode\":\"3833601433486\",\"ShipperCode\":\"YD\",\"Traces\":[{\"AcceptStation\":\"【广东韶关公司韶大分部】已签收，签收人是【合作代办点】\",\"AcceptTime\":\"2018-11-16 22:40:19\"},{\"AcceptStation\":\"【广东韶关公司韶大分部】正在进行【分发】扫描\",\"AcceptTime\":\"2018-11-16 14:20:32\"},{\"AcceptStation\":\"【广东韶关公司】正在进行【分发】扫描\",\"AcceptTime\":\"2018-11-16 10:54:44\"},{\"AcceptStation\":\"【广东韶关公司】正在进行【派送】扫描\",\"AcceptTime\":\"2018-11-16 10:54:09\"},{\"AcceptStation\":\"【广东广州分拨中心】发往【广东韶关公司】\",\"AcceptTime\":\"2018-11-15 17:09:56\"},{\"AcceptStation\":\"【广东广州分拨中心】正在进行【卸车】扫描\",\"AcceptTime\":\"2018-11-15 17:06:54\"},{\"AcceptStation\":\"【浙江金华永康直跑分拨点】发往【广东广州分拨中心】\",\"AcceptTime\":\"2018-11-14 17:20:59\"},{\"AcceptStation\":\"【浙江永康市公司】已收件\",\"AcceptTime\":\"2018-11-14 17:16:28\"},{\"AcceptStation\":\"【浙江永康市公司】发往【广东广州分拨中心】\",\"AcceptTime\":\"2018-11-14 17:02:46\"},{\"AcceptStation\":\"【浙江永康市公司】已收件\",\"AcceptTime\":\"2018-11-14 16:53:25\"}],\"State\":\"3\",\"EBusinessID\":\"1398655\",\"Success\":true,\"ShipperName\":\"韵达快递\",\"transportState\":\"已签收\"}"
+				},
+				{
+					"id": -1,
+					"name": "蜂蜜",
+					"pathName": "pages/tracking/index",
+					"query": "detail={\"LogisticCode\":\"73109538095051\",\"ShipperCode\":\"ZTO\",\"Traces\":[{\"AcceptStation\":\"【宿迁市】  快件已在 【宿迁】 签收, 签收人: 快递驿站, 如有疑问请电联:15651363855 / 0527-84276688, 您的快递已经妥投, 如果您对我们的服务感到满意, 请给个五星好评, 鼓励一下我们【请在评价快递员处帮忙点亮五颗星星哦~】\",\"AcceptTime\":\"2019-02-19 19:41:30\"},{\"AcceptStation\":\"【宿迁市】  【宿迁】 的自行车（15651363855） 正在第1次派件, 请保持电话畅通,并耐心等待\",\"AcceptTime\":\"2019-02-19 13:26:04\"},{\"AcceptStation\":\"【宿迁市】  快件已经到达 【宿迁】\",\"AcceptTime\":\"2019-02-19 12:06:03\"},{\"AcceptStation\":\"【淮安市】  快件离开 【淮安中转】 已发往 【宿迁】\",\"AcceptTime\":\"2019-02-19 07:25:13\"},{\"AcceptStation\":\"【淮安市】  快件已经到达 【淮安中转】\",\"AcceptTime\":\"2019-02-19 07:25:05\"},{\"AcceptStation\":\"【南京市】  快件离开 【南京中转部】 已发往 【淮安中转】\",\"AcceptTime\":\"2019-02-19 01:46:40\"},{\"AcceptStation\":\"【南京市】  快件已经到达 【南京中转部】\",\"AcceptTime\":\"2019-02-19 01:25:57\"},{\"AcceptStation\":\"【揭阳市】  快件离开 【潮汕中心】 已发往 【南京中转部】\",\"AcceptTime\":\"2019-02-18 03:17:14\"},{\"AcceptStation\":\"【揭阳市】  快件已经到达 【潮汕中心】\",\"AcceptTime\":\"2019-02-18 02:33:11\"},{\"AcceptStation\":\"【汕头市】  快件离开 【潮阳】 已发往 【淮安中转】\",\"AcceptTime\":\"2019-02-17 20:22:47\"},{\"AcceptStation\":\"【汕头市】  【潮阳】（0754-89395335、0754-89395299） 的 西胪西一新寨代理点 （18165925859） 已揽收\",\"AcceptTime\":\"2019-02-17 19:55:18\"}],\"State\":\"3\",\"EBusinessID\":\"1398655\",\"Success\":true,\"ShipperName\":\"中通速递\",\"remark\":\"蜂蜜\",\"is_remind\":1,\"transportState\":\"已签收\"}"
+				}
+			]
+		}
+	}
+}

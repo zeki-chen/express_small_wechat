@@ -1,0 +1,157 @@
+<?php
+namespace app\index\controller;
+use KdApiSearch\KdApi;
+use KdApiOrderSearch\KdApiCompanySearch;
+use think\Request;
+use JWT\JWT;
+use think\Db;
+class Index {
+
+	public function valid(){
+
+		$storage=Request::instance();
+
+		$token=$storage->post();
+
+		if(empty($token))  return ;
+
+		$obj = new Jwt();
+
+    	$bool=$obj->verifyToken($token['token']['data']);
+    	
+    	if($bool){
+    		exit(json_encode('true'));
+    	}else
+
+    	exit(json_encode('false'));
+	}
+
+	//引入快递鸟的接口
+	public function search(){
+		$tokenObj=new Jwt(); 
+
+		$post=Request::instance();
+
+		$Klist=$post->post();//得到快递单号  
+
+		$companyName=$this->returnName($Klist);
+
+		// var_dump($Klist);exit;
+		$token=$tokenObj->verifyToken($Klist['token']['data']);
+		
+		
+		//先去数据库查找
+		$res=Db::table('wx_ticket')
+				->where('ticket_id',$Klist['ev']['detail']['value'])
+				->find();
+
+		$user=Db::table('wx_user')
+				->where('openid','eq',$token['openid'])
+				->find();
+
+		if($res){
+
+			if((time()-strtotime($res['curquerytime']))/3600>=2)
+			{
+				$arr=$this->useKdApi($Klist);//调用接口后更新库返回前台数据
+				Db::table('wx_wl')
+				->where('ticket_id',$Klist['ev']['detail']['value'])
+				->update([
+					'wl_info'=>addslashes($arr),
+					'uptime'=>date("Y-m-d H:i:s")
+				]);
+
+				Db::table('wx_query_relative')
+				->where('user_id','eq',$user['user_id'])
+				->update(['uptime'=>date("Y-m-d H:i:s")]);
+
+				Db::table('wx_ticket')
+				->where('ticket_id',$Klist['ev']['detail']['value'])->update(['uptime'=>date("Y-m-d H:i:s"),
+							  'curquerytime'=>date("Y-m-d H:i:s")]);
+
+				echo $arr.$companyName;
+
+			}else{
+				$arr=Db::table('wx_wl')
+				->alias('a')
+				->join('wx_ticket w','a.ticket_id = w.ticket_id')
+				->find();
+				echo stripslashes($arr['wl_info']);
+			}
+
+		}else{
+
+			$arr=$this->useKdApi($Klist);//调用接口后存库
+
+			Db::table('wx_query_relative')
+				->insert(['addtime'=>date("Y-m-d H:i:s"),
+						
+						 'user_id'=>$user['user_id'],
+
+						 'ticket_id'=>$Klist['ev']['detail']['value']
+
+					]);
+
+			Db::table('wx_ticket')
+				->insert(['addtime'=>date("Y-m-d H:i:s"),
+						
+						 'curquerytime'=>date("Y-m-d H:i:s"),
+
+						 'ticket_id'=>$Klist['ev']['detail']['value']
+
+					]);
+
+			Db::table('wx_wl')
+				->insert(['ticket_id'=>$Klist['ev']['detail']['value'],
+					'wl_info'=>addslashes($arr),
+					'addtime'=>date("Y-m-d H:i:s")
+				]);
+
+			echo $arr.$companyName;
+
+		}
+	}
+
+	public function useKdApi($Klist){
+
+		$KdCompanyObj=new KdApiCompanySearch($Klist['ev']['detail']['value']);
+		
+		//获得公司编码
+		$companyNum=$KdCompanyObj->getOrderTracesByJson();
+
+		$companyNum=json_decode($companyNum,JSON_OBJECT_AS_ARRAY);
+
+		$searchObj = new KdApi($companyNum['Shippers'][0]['ShipperCode'],$Klist['ev']['detail']['value']);
+
+		$resJson= $searchObj->getOrderTracesByJson();
+
+		return $resJson;
+	}
+
+	public function returnName($Klist){
+		$KdCompanyObj=new KdApiCompanySearch($Klist['ev']['detail']['value']);
+		
+		//获得公司编码
+		$companyNum=$KdCompanyObj->getOrderTracesByJson();
+
+		$companyNum=json_decode($companyNum,JSON_OBJECT_AS_ARRAY);
+		
+		$res =json_encode(array('ShipperName'=>$companyNum['Shippers'][0]['ShipperName']),JSON_UNESCAPED_UNICODE);
+		return  $res;
+	}
+
+
+	public function test(){
+		// $post=Request::instance();
+
+		// $Klist=$post->post();//得到快递单号  
+		
+		// var_dump($Klist['ev']['detail']['value']);
+		// var_dump($Klist['token']['data']);
+		$string='"{ "LogisticCode" : "3967950525457", "ShipperCode" : "YD", "Traces" : [ { "AcceptStation" : "到达：陕西市场部武功县果然不错服务部 已揽件", "AcceptTime" : "2016-08-01 19:24:37" }, { "AcceptStation" : "到达：陕西西安分拨中心", "AcceptTime" : "2016-08-01 23:44:43" }, { "AcceptStation" : "到达：陕西西安分拨中心 发往：广东东莞网点包", "AcceptTime" : "2016-08-02 00:12:03" }, { "AcceptStation" : "到达：陕西西安分拨中心 发往：广东东莞分拨中心", "AcceptTime" : "2016-08-02 00:18:50" }, { "AcceptStation" : "到达：广东东莞分拨中心 上级站点：陕西西安分拨中心", "AcceptTime" : "2016-08-03 03:59:58" }, { "AcceptStation" : "到达：广东东莞分拨中心 发往：广东东莞虎门公司", "AcceptTime" : "2016-08-03 04:05:17" }, { "AcceptStation" : "到达：广东东莞虎门公司 发往：", "AcceptTime" : "2016-08-03 06:22:18" }, { "AcceptStation" : "到达： 指定：派送", "AcceptTime" : "2016-08-03 11:26:46" }, { "AcceptStation" : "到达： 由 已签收 签收", "AcceptTime" : "2016-08-03 11:52:27" } ], "State" : "3", "EBusinessID" : "1398655", "Success" : true } "';
+		Db::table('wx_wl')->insert(['wl_info'=>addslashes($string)]);
+		$res=Db::table('wx_wl')->where('wl_id',1)->find();
+		echo stripslashes($res['wl_info']);
+		echo '<br><br>'.$string;
+	}
+}

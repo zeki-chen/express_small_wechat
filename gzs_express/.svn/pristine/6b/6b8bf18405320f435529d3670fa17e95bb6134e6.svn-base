@@ -1,0 +1,12 @@
+[ 2018-05-18T14:10:20+08:00 ] ::1 /czq/Vrent/index.php/admin'
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Admin'
+
+[ 2018-05-18T14:10:24+08:00 ] ::1 /czq/Vrent/index.php/images/light.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+

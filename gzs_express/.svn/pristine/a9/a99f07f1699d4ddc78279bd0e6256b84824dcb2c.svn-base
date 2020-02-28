@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    $(function(){
+        $('.mainform').Validform({
+            tiptype:4,
+
+            showAllError: true,//提交表单时所有错误提示信息都会显示
+            ajaxPost: true,//使用ajax方式提交表单数据，将会把数据POST到config方法或表单action属性里设定的地址
+            beforeSubmit: function(curform) {
+                loading("正在提交");
+            },
+            callback: function(data) {
+                if (data.status == 1) {
+                    msgOK(data.info);
+                } else {
+                    msgFaild(data.info);
+                }
+                if (data.url) {
+                    loading(data.info + ",跳转中...");
+                    hrefTo(data.url, 500)
+                }
+            }
+        });
+    });
+</script>

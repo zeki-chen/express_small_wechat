@@ -1,0 +1,206 @@
+<include file="Public:doctype"/>
+<html lang="en">
+<head>
+    <include file="Public:baseHead"/>
+</head>
+<body>
+<style>
+    .upimg_out {
+        width: 70px;
+        height: 70px;
+        position: relative;
+    }
+
+    .upimg {
+             width: 70px;
+             height: 70px;
+             display: block;
+         }
+    .upimg2 {
+        width: 70px;
+        height: 70px;
+        display: block;
+    }
+    .upimg3 {
+        width: 70px;
+        height: 70px;
+        display: block;
+    }
+    .upimg4 {
+        width: 70px;
+        height: 70px;
+        display: block;
+    }
+
+    .upimg_btn {
+        display: block;
+        opacity: 0;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        left: 0;
+        top: 0;
+    }
+</style>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/lang/zh-CN.js"></script>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/plugins/code/prettify.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/kindeditor-master/themes/default/default.css"/>
+<include file="Public:nav"/>
+
+<div class="formbody">
+
+    <div class="formtitle"><span>{$title}</span></div>
+
+    <div class="tab mt10" id="tabid1">
+        <form class="mainform" method="POST" action="{:U('Car/doPhoto')}" enctype="multipart/form-data">
+            <input type="hidden" name="car_id" value="{$model.car_id}"/>
+            <table class="formtable">
+                <tbody>
+
+                <tr id="" class="">
+                    <td class="ft_title">封面1</td>
+                    <td colspan="3">
+
+                        <div class="file_holder ">
+                            <div class="upimg_out">
+                                <img src="{$model.pic}" class="upimg"/>
+
+                                <input type="text" id="image1" value="" name="pic" class="upimg_btn"/>
+                            </div>
+
+                        </div>
+
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">封面2</td>
+                    <td colspan="3">
+
+                        <div class="file_holder ">
+                            <div class="upimg_out">
+                                <img src="{$model.pic2}" class="upimg2"/>
+
+                                <input type="text" id="image2" value="" name="pic2" class="upimg_btn"/>
+                            </div>
+
+                        </div>
+
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">封面3</td>
+                    <td colspan="3">
+
+                        <div class="file_holder ">
+                            <div class="upimg_out">
+                                <img src="{$model.pic3}" class="upimg3"/>
+
+                                <input type="text" id="image3" value="" name="pic3" class="upimg_btn"/>
+                            </div>
+
+                        </div>
+
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">封面4</td>
+                    <td colspan="3">
+
+                        <div class="file_holder ">
+                            <div class="upimg_out">
+                                <img src="{$model.pic4}" class="upimg4"/>
+
+                                <input type="text" id="image4" value="" name="pic4" class="upimg_btn"/>
+                            </div>
+
+                        </div>
+
+                    </td>
+                </tr>
+
+                <td></td>
+                <td colspan="3">
+                    <input type="submit" value="保存" class="btn button_primary btnsave" status="1">
+                    <input type="button" value="返回" class="btn button_success btnsave"
+                           onclick="javascript:history.go(-1)"/>
+                </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <include file="Public:validformScript"/>
+    <div class="h10"></div>
+</div>
+<script>
+    KindEditor.ready(function (K) {
+        var editor = K.editor({
+            uploadJson: "{:U('Car/pic')}",
+            // fileManagerJson : '__PUBLIC__/kindeditor-master/php/file_manager_json.php',
+            // allowFileManager : true
+        });
+        K('#image1').click(function () {
+            editor.loadPlugin('image', function () {
+                editor.plugin.imageDialog({
+                    // showRemote : false,
+                    imageUrl: K('#url1').val(),
+                    clickFn: function (url, title, width, height, border, align) {
+                        console.log("url:" + url);
+                        K('#image1').val(url);
+                        K('.upimg').attr('src', url);
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+        K('#image2').click(function () {
+            editor.loadPlugin('image2', function () {
+                editor.plugin.imageDialog({
+                    // showRemote : false,
+                    imageUrl: K('#url2').val(),
+                    clickFn: function (url2, title, width, height, border, align) {
+                        console.log("url:" + url2);
+                        K('#image2').val(url2);
+                        K('.upimg2').attr('src', url2);
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+        K('#image3').click(function () {
+            editor.loadPlugin('image3', function () {
+                editor.plugin.imageDialog({
+                    // showRemote : false,
+                    imageUrl: K('#url3').val(),
+                    clickFn: function (url3, title, width, height, border, align) {
+                        console.log("url:" + url3);
+                        K('#image3').val(url3);
+                        K('.upimg3').attr('src', url3);
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+        K('#image4').click(function () {
+            editor.loadPlugin('image4', function () {
+                editor.plugin.imageDialog({
+                    // showRemote : false,
+                    imageUrl: K('#url4').val(),
+                    clickFn: function (url4, title, width, height, border, align) {
+                        console.log("url:" + url4);
+                        K('#image4').val(url4);
+                        K('.upimg4').attr('src', url4);
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+
+
+    });
+</script>
+
+</body>
+</html>

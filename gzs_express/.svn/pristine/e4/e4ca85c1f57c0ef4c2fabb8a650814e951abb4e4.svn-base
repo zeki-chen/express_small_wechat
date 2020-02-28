@@ -1,0 +1,12 @@
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <foreach name="bread" item="vo">
+            <empty name="vo['url']">
+                <li>{$vo.name}</li>
+            <else/>
+                <li><a href="{$vo.url}">{$vo.name}</a></li>
+            </empty>
+        </foreach>
+    </ul>
+</div>

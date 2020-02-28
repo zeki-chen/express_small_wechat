@@ -1,0 +1,1154 @@
+[ 2018-05-14T08:49:26+08:00 ] ::1 /czq/Vrent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = 0 AND `pwd` = '123' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0625s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0225s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.027500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.027500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-05-14T08:49:33+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0150s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '4' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0700s ]
+SQL: SELECT spitslot.spitslot_id AS spitslot_id,spitslot.car_id AS car_id,spitslot.order_id AS order_id,spitslot.user_id AS user_id,spitslot.grade AS grade,spitslot.content AS content,spitslot.addtime AS addtime,spitslot.updatetime AS updatetime,user.user_name AS user_name,user.tel AS tel,user.headimgurl AS headimgurl,user.true_name AS true_name FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '4'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '4' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047501s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2018-05-14T08:49:43+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = 0 AND `pwd` = '123' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2018-05-14T08:49:43+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/images/ma.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2018-05-14T08:49:49+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/login.html?tel=123&pwd=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = 0 AND `pwd` = '123' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = 123 AND `pwd` = '123' LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T08:49:51+08:00 ] ::1 /czq/Vrent/index.php/Index/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T08:49:51+08:00 ] ::1 /czq/Vrent/index.php/Index/index/images/ma.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002500s ]
+
+[ 2018-05-14T08:50:32+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0125s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '6' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0125s ]
+SQL: SELECT spitslot.spitslot_id AS spitslot_id,spitslot.car_id AS car_id,spitslot.order_id AS order_id,spitslot.user_id AS user_id,spitslot.grade AS grade,spitslot.content AS content,spitslot.addtime AS addtime,spitslot.updatetime AS updatetime,user.user_name AS user_name,user.tel AS tel,user.headimgurl AS headimgurl,user.true_name AS true_name FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '6'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '6' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002500s ]
+
+[ 2018-05-14T10:22:35+08:00 ] ::1 /czq/Vrent/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = 123 AND `pwd` = '123' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:22:38+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0130s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0490s ]
+SQL: SELECT spitslot.spitslot_id AS spitslot_id,spitslot.car_id AS car_id,spitslot.order_id AS order_id,spitslot.user_id AS user_id,spitslot.grade AS grade,spitslot.content AS content,spitslot.addtime AS addtime,spitslot.updatetime AS updatetime,user.user_name AS user_name,user.tel AS tel,user.headimgurl AS headimgurl,user.true_name AS true_name FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '3'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T10:41:32+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0260s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0030s ]
+ERR: Think\Model:selsect方法不存在！
+
+[ 2018-05-14T10:41:48+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0140s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+NOTIC: [8] Undefined variable: list2 E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 186 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:42:22+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0200s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:53:11+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0290s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T10:53:32+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0310s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '3' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T10:53:37+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0250s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-14T10:53:48+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0100s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:53:48+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/Vrent/Public/update/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:53:48+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/Vrent/Public/update/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T10:54:04+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0140s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:56:01+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0200s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:56:07+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0180s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '2' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:56:14+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0200s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '3' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 3  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2018-05-14T10:57:11+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0060s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-14T10:57:16+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0220s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T10:57:33+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0110s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 1  [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined variable: list E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T10:58:01+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0090s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `v_spitslot` WHERE `car_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `v_spitslot` WHERE `car_id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+NOTIC: [8] Undefined index: user_name E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 155 行.
+NOTIC: [8] Undefined index: user_name E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 155 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:58:28+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0240s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0200s ]
+SQL: SELECT spitslot.spitslot_id AS spitslot_id,spitslot.car_id AS car_id,spitslot.order_id AS order_id,spitslot.user_id AS user_id,spitslot.grade AS grade,spitslot.content AS content,spitslot.addtime AS addtime,spitslot.updatetime AS updatetime,user.user_name AS user_name,user.tel AS tel,user.headimgurl AS headimgurl,user.true_name AS true_name FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '1'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T10:59:28+08:00 ] ::1 /czq/Vrent/index.php/Index/Detail/detail/car_id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0200s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id WHERE car.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `v_spitslot` [ RunTime:0.0100s ]
+SQL: SELECT spitslot.spitslot_id AS spitslot_id,spitslot.car_id AS car_id,spitslot.order_id AS order_id,spitslot.user_id AS user_id,spitslot.grade AS grade,spitslot.content AS content,spitslot.addtime AS addtime,spitslot.updatetime AS updatetime,user.user_name AS user_name,user.tel AS tel,user.headimgurl AS headimgurl,user.true_name AS true_name FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '1'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM v_spitslot spitslot LEFT JOIN v_user user ON spitslot.user_id=user.user_id WHERE spitslot.car_id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: describe E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\a107663dd7b84d4ea0b6a874e3db66f5.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T10:59:38+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-14T11:03:49+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-14T11:03:49+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/images/ma.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T11:35:36+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011000s ]
+
+[ 2018-05-14T11:35:36+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/images/ma.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T11:47:02+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T11:47:02+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/images/ma.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T11:47:34+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-05-14T11:47:34+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/images/ma.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T11:48:31+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T11:48:38+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T11:48:46+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0100s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T11:49:04+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T11:49:34+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T11:50:47+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T11:51:31+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T11:51:57+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-05-14T11:52:47+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T11:59:51+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-05-14T12:01:17+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T12:06:58+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: user E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 94 行.
+NOTIC: [8] Undefined index: self E:\phpstudy\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 142 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-14T12:07:20+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:search
+
+[ 2018-05-14T12:07:23+08:00 ] ::1 /czq/Vrent/index.php/Index/Search/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:search
+

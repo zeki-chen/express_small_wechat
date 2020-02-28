@@ -1,0 +1,122 @@
+<!--pages/tracking/index.wxml-->
+<view class='contain {{over_hid}}'>
+  <!-- navigationBar -->
+  <view class='nav-wrap'>
+    <view class='nav-title' catchtap='back'>
+      <label class='back'></label>
+      <text>物流追踪</text>
+    </view>
+    <image class='nav_bg' mode='scaleToFill' src='../../images/nav_bg.png'></image>
+  </view>
+  <view class='blank'></view>
+
+  <!-- tracking -->
+  <view class='content'>
+
+    <view class='con_wrap txt'>
+
+      <view class='label_belong'>
+        <image class='sign' src='../../images/sign.png'></image>
+        <text class='belong remark' wx:if="{{remark}}">{{remark}}</text>
+        <text class='belong' wx:elif="{{detail.ShipperName}}">{{detail.ShipperName}} </text>
+        <text class='track_num' selectable="true">{{detail.LogisticCode}}</text>
+        <text class='copy' bindtap='copy' data-text='{{detail.LogisticCode}}'>复制</text>
+      </view>
+
+      <!-- 查有相关物流信息 -->
+      <view class='item-contain' wx:if="{{detail.State==2 || detail.State==3 || detail.State==4}}">
+
+        <view class='item' wx:for="{{detail.Traces}}" wx:key="{{index}}">
+
+          <view class='item-left'>
+
+            <view class='item-top {{item.noTopLine}}'>
+
+              <view class='circle'></view>
+
+            </view>
+
+            <view class='item-bottom {{item.noBottomLine}}'></view>
+
+          </view>
+
+          <view class='item-right'>
+
+            <text class='txt {{item.black}}'>{{item.AcceptStation}}</text>
+
+            <view class='box'>
+              <text class='date'>{{item.AcceptTime}}</text>
+            </view>
+
+          </view>
+
+        </view>
+
+      </view>
+
+      <!-- 查无相关物流信息 -->
+      <view class='con_null' wx:elif="{{detail.State!=2||detail.State!=3||detail.State!=4}}">
+        <image class='trBg' src='../../images/trBg.png'></image>
+        <text class='trTip'>快递信息尚未录入系统，或者单号已经过期</text>
+        <!-- <image class='trTip' src='../../images/trTip'></image> -->
+      </view>
+
+    </view>
+
+  </view>
+
+  <!-- tabBar -->
+  <view class='tabBar' style='overflow:{{tabBar_overflow}}'>
+    <view class='wrap'>
+      <image class='tabBar_bg' src='{{tabBar_bg}}'></image>
+      <view class='tab_wp'>
+        <view class='sub_wp tab' bindtap='subscription' style='margin-top:{{subtop}}'>
+          <image class='Subscribe' src='{{subscribeImg}}' style='width:{{picWidth}};height:{{picHeight}};margin-left:{{subleft}};'></image>
+          <text class='desc'>订阅</text>
+        </view>
+        <view class='rem_wp tab' bindtap='note'>
+          <image class='Remarks' src='../../images/Remarks.png' style='margin-top:{{remarkTop}}'></image>
+          <text class='desc'>备注</text>
+        </view>
+        <view class='link_wp tab'>
+          <button open-type='share' class='btn_share'></button>
+          <image class='link' src='../../images/link.png'></image>
+          <text class='desc'>链接</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='layer' style='display:{{layerDisplay}};' bindtap='wait'></view>
+
+  <view class='main' style='display:{{mainLayer}}'>
+    <view class='main_text'>{{ask_info}}</view>
+    <view class='btn'>
+      <view class='wait' catchtap='wait'>我想想</view>
+      <form bindsubmit="subs_sure" report-submit='true'>
+        <view class='hr'>
+          <button class='sure' id='subs_sure' form-type='submit'>确定</button>
+        </view>
+      </form>
+    </view>
+  </view>
+
+  <view class='tips'>
+    <view class='tipContent' style='display:{{tipsBlock}}'>{{tips}}</view>
+  </view>
+
+  <view class='notes' style='display:{{show}}'>
+    <form bindsubmit='note_sure'>
+      <view class='noteTitle'>
+        <text>编辑备注</text>
+        <input class='noteValue' name='notes' maxlength='6' placeholder='请填写备注' value='{{noteValue}}'></input>
+      </view>
+      <view class='note_btn'>
+        <button class='nbtn' id='note_wait' catchtap='wait'>再想想</button>
+        <view class='hr'>
+          <button class='nbtn' id='note_sure' form-type='submit'>确定</button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

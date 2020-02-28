@@ -1,0 +1,52 @@
+<!--index.wxml-->
+
+<!-- navigationBar + input -->
+<view class='nav-wrap'>
+  <view class='nav-title'>快递查询</view>
+  <image class='nav_bg' mode='scaleToFill' src='../../images/nav_bg.png'></image>
+  <view class='input_wrap'>
+    <image class='input_border' src='../../images/search.png'></image>
+    <input class='ticket_id' name="ticket_id" placeholder='请输入快递单号' placeholder-class='pClass' value='{{ticket_id}}' bindconfirm ="enter"></input>
+    <view class='scan' catchtap='scan'></view>
+  </view>
+</view>
+
+<view class='wrap' style='display:{{id_tips}}'>
+  <view class='id_tips'>请输入快递单号！</view>
+</view>
+
+<!-- No enquiry record -->
+<view class='history' wx:if="{{!TracesArr.length}}">
+  <view class='tips'>
+    <image class='tips' src='../../images/tips.png'></image>
+  </view>
+  <image class='bg_null' mode='scaleToFill' src='../../images/bg_null.png'></image>
+</view>
+
+<!-- enquiry record -->
+<view class='history' wx:else>
+  <view class='his_tag'>
+    <text>历史记录</text>
+    <text id='up'>下拉刷新</text>
+  </view>
+  <block wx:for="{{TracesArr}}" wx:key="{{index}}">
+    <view class='record' data-LogisticCode='{{item.ticket_id}}' catchtap='historyTrackTo'>
+      <view class='record_msg'>
+        <image class='sign' src='../../images/sign.png'></image>
+        <text class='belong'>{{item.ShipperName}} {{item.ticket_id}}</text>
+        <text class='time'>{{item.Traces.AcceptTime}}</text>
+      </view>
+      <view class='record_info'>
+        <view class='note' wx:if="{{item.remark}}" >{{item.remark}}</view>
+        <label class='status'>{{item.transportState}}</label>
+        <text class='txt' wx:if="{{item.Traces.AcceptStation}}">{{item.Traces.AcceptStation}}</text>
+        <text class='txt' wx:elif="{{item.Traces}}">{{item.Traces}}</text>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+ <loading hidden="{{loadingHidden}}">
+        加载中...
+  </loading>

@@ -1,0 +1,107 @@
+<?php /**  * PHP实现jwt  */
+namespace JWT;
+
+class Jwt {     //头部   
+
+          public static $header=array(     
+               'alg'=>'HS256', //生成signature的算法     
+               'typ'=>'JWT'  //类型   
+          );     
+
+          //使用HMAC生成信息摘要时所使用的密钥   
+          public  static $key='12345698989'; 
+
+        //1.JWT使用流程，先将头部和包含用户信息验证的负载部分分别转为json。
+        //2.对json头部和负载分别进行base64编码
+        //3.将编码完成的头部和负载连接起来，然后自定义一个用于签名认证的字符串标识
+        //4.最后使用头部中的加密算法加密生成签名。
+        //5.将头部，负载，签名三部分连接起来并且用“.”作为分隔符。
+
+        //对于加密出来的字符串一定要再经过严格处理 ，因为有经验的人知道加密的函数会拿去破解，所以将一些特定字符去掉或者替换来 掩盖加密的方法
+          public  function getToken(array $payload) {     
+               if(is_array($payload))     {  
+
+                //
+                $base64header=self::base64UrlEncode(json_encode(self::$header,JSON_UNESCAPED_UNICODE));  
+
+                $base64payload=self::base64UrlEncode(json_encode($payload,JSON_UNESCAPED_UNICODE)); 
+                      // echo '<br>';var_dump($base64payload);
+                      // exit;
+
+                $token=$base64header.'.'.$base64payload.'.'.self::signature($base64header.'.'.$base64payload,self::$key,self::$header['alg']);    
+
+                  return $token;  
+
+               }else{       
+
+                    return false;     
+
+               }   
+          }
+
+          public  function verifyToken(string $Token)   {     
+              
+               $tokens = explode('.', $Token);     
+              
+               if (count($tokens) != 3)   //验证签名是否是三部分组成    
+              
+               return false;       
+               
+               list($base64header, $base64payload, $sign) = $tokens;       
+               //获取token中的各个组件。
+
+               $base64decodeheader = json_decode(self::base64UrlDecode($base64header), JSON_OBJECT_AS_ARRAY); 
+
+               if (empty($base64decodeheader['alg']))     
+
+               return false;      
+
+               //签名验证     
+               if (self::signature($base64header . '.' . $base64payload, self::$key, $base64decodeheader['alg']) !== $sign)   
+
+               return false;       
+
+               $payload = json_decode(self::base64UrlDecode($base64payload), JSON_OBJECT_AS_ARRAY);      
+
+                //签发时间大于当前服务器时间验证失败     
+                if (isset($payload['iat']) && $payload['iat'] > time())       
+                return false;       
+                //过期时间小宇当前服务器时间验证失败     
+                if (isset($payload['exp']) && $payload['exp'] < time())       
+                return false;       
+                //该nbf时间之前不接收处理该Token     
+               if (isset($payload['nbf']) && $payload['nbf'] > time())  
+
+                return false;       
+
+               return $payload;   
+          } 
+
+          public static function base64UrlEncode(string $input)   {     
+               
+              // echo base64_encode($input);echo '<br>';
+              
+              // echo strtr(base64_encode($input), '+/', '-_');echo '<br>';
+
+              // var_dump(str_replace('=', '', strtr(base64_encode($input), '+/', '-_')));
+
+              return str_replace('=', '', strtr(base64_encode($input), '+/', '-_'));   
+          }
+
+      public static function base64UrlDecode(string $input)   {     
+          $remainder = strlen($input) % 4;  //不足4位要补足
+           if ($remainder) {       
+             $addlen = 4 - $remainder;      
+              $input .= str_repeat('=', $addlen); //把之前省掉的等号补充回来
+            }     
+          return base64_decode(strtr($input, '-_', '+/'));   
+      }  
+
+          public static function signature(string $input, string $key, string $alg = 'HS256')   {    
+
+            $alg_config=array(       'HS256'=>'sha256'    );  
+
+            return self::base64UrlEncode(hash_hmac($alg_config[$alg], $input, $key,true));   
+          } 
+} 
+

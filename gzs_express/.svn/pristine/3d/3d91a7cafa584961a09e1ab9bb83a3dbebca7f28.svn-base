@@ -1,0 +1,60 @@
+<include file="Public:doctype"/>
+<html lang="en">
+<head>
+    <include file="Public:baseHead"/>
+</head>
+<body>
+
+<include file="Public:nav"/>
+
+<div class="rightinfo">
+
+    <div class="tools">
+        <ul class="toolbar">
+            <li><a href="javascript:delMut('{:U("Order/doDel")}')"><span><img src="__PUBLIC__/Admin/images/t03.png" /></span>删除</a></li>
+        </ul>
+    </div>
+
+    <table class="tablelist">
+        <thead>
+        <tr>
+            <th width="60"><label><input type="checkbox" class="selectAll" />全选</label></th>
+            <th class="ft" width="200">订单ID</th>
+            <th width="300">出租用户</th>
+            <th width="300">租户</th>
+            <th width="300">下单时间</th>
+            <th width="200">操作</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <foreach name="list" item="vo">
+            <tr>
+                <td><input name="order_id" class="del_checkbox" type="checkbox" value="{$vo.order_id}" /></td>
+                <td class="ft">{$vo.order_id}</td>
+                <td>{$vo.sent_name}</td>
+                <td>{$vo.user_name}</td>
+                <td>{:date('Y-m-d H:i:s',$vo['addtime'])}</td>
+                <td>
+                    <a href="{:U('Order/view',array('order_id'=>$vo['order_id']))}" class="tablelink">查看</a>
+                    <span>|</span>
+                    <a href="{:U('Order/doedit',array('order_id'=>$vo['order_id']))}" class="tablelink">拒绝订单</a>
+                    <span>|</span>
+                    <a class="delBtn tablelink" href="{:U('Reply/doDel',array('ids'=>$vo['rid']))}" del_title="{:cutString($vo['content'],20)}" >删除</a>
+                </td>
+            </tr>
+        </foreach>
+        </tbody>
+    </table>
+
+    <div class="pagin">
+        {$page}
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+</script>
+</body>
+</html>

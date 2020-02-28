@@ -1,0 +1,74 @@
+<include file="Public:doctype" />
+<html lang="en">
+<head>
+    <include file="Public:baseHead" />
+</head>
+<body>
+<include file="Public:nav"/>
+<div class="formbody">
+
+    <div class="formtitle"><span>{$title}</span></div>
+
+    <div class="tab mt10" id="tabid1">
+        <table class="formtable">
+            <tbody>
+            <tr id="" class="">
+                <td class="ft_title">用户头像</td>
+                <td colspan="3">
+                   <img class="wximg" src="{$model.headimgurl}"/>
+                </td>
+            </tr>
+            <tr id="" class="">
+                <td class="ft_title">用户昵称</td>
+                <td colspan="3">{$model.user_name}</td>
+            </tr>
+            <tr id="" class="">
+                <td class="ft_title">注册时间</td>
+                <td colspan="3">{:date('Y-m-d H:i:s',$model['addtime'])}</td>
+            </tr>
+            <tr id="" class="">
+                <td class="ft_title">手机号</td>
+                <td colspan="3">{$model.tel}</td>
+            </tr>
+            <tr id="" class="">
+                <td class="ft_title">真实姓名</td>
+                <td colspan="3">{$model.turename}</td>
+            </tr>
+             <tr id="" class="">
+                <td class="ft_title">身份证</td>
+                <td colspan="3">{$model.idcard}</td>
+            </tr>
+             <tr id="" class="">
+                <td class="ft_title">性别</td>
+                <td colspan="3"> <eq name="model['valid']" value="1">男
+                    <else/>女
+                    </eq></td>
+            </tr>
+            <tr id="" class="">
+                <td class="ft_title">驾照号码</td>
+                <td colspan="3">{$model.driving}</td>
+            </tr>
+                <tr id="" class="">
+                <td class="ft_title">支付宝账号</td>
+                <td colspan="3">{$model.zhifubao}</td>
+            </tr>
+           <tr id="" class="">
+                <td class="ft_title">信用分</td>
+                <td colspan="3">{$model.tel}</td>
+            </tr>
+            <tr>           
+                <td></td>
+                <td colspan="3">
+                    <input type="button" value="返回" class="btn button_success btnsave" onclick="javascript:history.go(-1)" />
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="h10"></div>
+</div>
+
+</div>
+</body>
+</html>

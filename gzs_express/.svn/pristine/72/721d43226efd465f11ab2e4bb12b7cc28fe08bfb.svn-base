@@ -1,0 +1,217 @@
+<?php
+namespace app\index\controller;
+use think\Request;
+use JWT\JWT;
+use think\Db;//TP5配置表前缀，但写的时候仍然不能省略前缀
+use \think\Cache;
+class Track
+{
+  //修改备注  $user_id   $ticket_id $remark
+    public function update_remark()
+    {   
+        $storage=Request::instance();
+        $data=$storage->post();  
+        var_dump($data);   
+        $where['user_id'] = $data['user_id'];
+        $obj = new Jwt();
+        $where['ticket_id']=$obj->verifyToken($data['ticket_id']['data']);
+        $id=db('query_relative')->where($where)->value('id');
+        $remark=['remark'=>$data['remark'],'update'=>date("Y-m-d H:i:s")];
+        $res = db('query_relative')->where('id',$id)->update($remark);
+        if ($res) {
+             $result['message'] = "修改备注成功";
+        } else {
+            $result['message'] = "修改备注失败";
+        }
+         exit(json_encode($result,JSON_UNESCAPED_UNICODE)) ;
+    }
+
+
+//定时扫描wl表的信息，发送模板消息
+    public function sendmsg()
+    {
+        $key = Cache::get('$token');//获取缓存access token
+        if ($key) {
+            $token = $key;
+        } else {
+            //获取access token
+            $appid = "wx35dd4874ca567a42";
+            $secret = "048910525ac35aa63403032d0a2238cb";
+            $get_accesstoken = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$appid}&secret={$secret}";//accesstoken获取api
+            $resultStr = $this->httpGet($get_accesstoken);
+            $arr = json_decode($resultStr, true);
+            $token = $arr["access_token"];
+            Cache::set('token', $token, 3600);//放入缓存
+        }
+        $where['wl_info'] = ['like', '%' . "签收" . '%'];
+        $res = db('wl')->where($where)->select();//扫描wl表的信息
+        foreach ($res as $key => $value) {
+            $formid['ticket_id'] = $value['ticket_id'];
+            $formid['status'] = 0;
+            $M = db('formid');
+            $msginfo = $M->where($formid)->select();
+            $content = $value['wl_info'];
+            //var_dump($msginfo);
+            //通过formid和user_id发送模板消息
+          foreach ($msginfo as $key => $v) {
+            $user['user_id'] = $v['user_id'];
+            $oppenid = db('user')->where($user)->value('openid');
+            $remark = $v['user_id'];
+            $remark = $v['ticket_id'];
+            $remark = db('query_relative')->where($remark)->value('remark');
+            $formid = $v['formid'];
+            $ticket_id = $v['ticket_id'];
+            $this->send($oppenid, $formid, $ticket_id, $content, $remark, $token);//发送模板消息
+          } 
+            $M->where($formid)->update(['status'=> 0]);     
+        }
+        $result['message'] = "发送模板消息完成";
+        exit(json_encode($result,JSON_UNESCAPED_UNICODE));
+    }
+
+    //模板发送函数
+    public function send($oppenid, $formid, $ticket_id, $content, $remark, $access_token)
+    {
+        $api = "https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token={$access_token}";//发送模板api
+        $template_id = "F8bv5WkS19cAKC3XF3RANaC5PTz48SF_SYgEvPoXUOM";//模板id
+        $wl_info = json_decode($content, true);//json转数组
+        $ShipperCode = $wl_info['ShipperCode'];
+        $Traces= end($wl_info['Traces']);//获得最后一个数组元素
+        $AcceptTime = $Traces['AcceptTime'];//获得最后一个数组元素的时间
+        $AcceptStation = $Traces['AcceptStation'];//获得最后一个数组元素的内容
+        $data = <<<END
+           {
+      "touser": "{$oppenid}",
+      "template_id": "{$template_id}",
+      "page": "",
+      "form_id": "{$formid}",
+      "data": {
+          "keyword1": {
+              "value": "{$ticket_id}"
+          },
+          "keyword2": {
+              "value": "{$ShipperCode}"
+          },
+          "keyword3": {
+              "value": "{$AcceptTime}"
+          },
+          "keyword4": {
+              "value": "{$AcceptStation}"
+          },
+          "keyword5": {
+              "value": "{$remark}"
+          } 
+         
+      },
+    }
+END;
+
+        for ($i = 0; $i < 3; $i++) {
+            $res = $this->httpPost($data, $api);
+            $tem=['tem_id'=>$template_id,'content'=>$AcceptStation,
+            'openid'=> $oppenid,'sendtime'=>date("Y-m-d H:i:s"),
+            'formid'=>$formid,'sendstatus'=>$res['errcode'],'tem_result'=>$res['errmsg'],
+            'overtime'=>$i];
+            var_dump($tem);
+            if ($i == 0){
+                db('tem')->insert($tem);
+            }
+            else {
+                $where['formid'] = $formid;
+                db('tem')->where($where)->setInc('overtime', 1);
+            }
+            if ($res['errcode'] == 0)
+                break;
+        }
+    }
+
+     //订阅 $user_id、$formid、$ticket_id、
+    public function subscribe()
+    {
+        $result = array();
+        $storage=Request::instance();
+        $data=$storage->post();    
+        $formid = ['user_id' => $data['user_id'], 
+                    'formid' => $data['formid'],
+                    'ticket_id' => $data['ticket_id'],
+                    'status' =>  0,
+                    'overtiime' => 0,
+                    'adddtime' => date("Y-m-d H:i:s"),
+                    'uptime' => date("Y-m-d H:i:s")];
+        $res = db('formid')->insert($formid);//存formid
+
+        $where['user_id'] = $data['user_id'];
+        $where['ticket_id'] = $data['ticket_id'];
+        $remind=['is_remind_status'=>1,'uptime'=>date("Y-m-d H:i:s")];
+        $res2 = db('query_relative')->where($where)->update($remind);//更改为订阅
+        if ($res && $res2) {
+            $result['message'] = "订阅成功";
+
+        } else {
+            $result['message'] = "订阅失败";
+        }
+        return json_encode($result);
+    }
+
+    //取消订阅 $user_id、$ticket_id、
+    public function unsubscribe()
+    {
+        $result = array();
+        $data = $_POST;
+        $where['user_id'] = $data['user_id'];
+        $where['ticket_id'] = $data['ticket_id'];
+        $form=['status'=>1,'uptime'=>date("Y-m-d H:i:s")];
+        $res = db('formid')->where($where)->update($form);//把formid的status修改成1
+        $remind=['is_remind_status'=>0,'uptime'=> date("Y-m-d H:i:s")];
+        $res2 = db('query_relative')->where($where)->update($remind);//更改为还未订阅
+        if ($res && $res2) {
+            $result['message'] = "取消订阅成功";
+        } else {
+            $result['message'] = "取消订阅失败";
+        }
+         return json_encode($result);
+    }
+
+
+    function httpPost($url, $data)
+    {
+        $curl = curl_init($url);
+        curl_setopt($curl, CURLOPT_POST, 1);
+        curl_setopt($curl, CURLOPT_HEADER, 0);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_TIMEOUT, 500);
+        // 为保证第三方服务器与微信服务器之间数据传输的安全性，所有微信接口采用https方式调用，必须使用下面2行代码打开ssl安全校验。
+        // 如果在部署过程中代码在此处验证失败，请到 http://curl.haxx.se/ca/cacert.pem 下载新的证书判别文件。
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($curl, CURLOPT_URL, $url);
+
+        $res = curl_exec($curl);
+        curl_close($curl);
+
+        return $res;
+
+    }
+
+    function httpGet($url)
+    {
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_TIMEOUT, 500);
+        // 为保证第三方服务器与微信服务器之间数据传输的安全性，所有微信接口采用https方式调用，必须使用下面2行代码打开ssl安全校验。
+        // 如果在部署过程中代码在此处验证失败，请到 http://curl.haxx.se/ca/cacert.pem 下载新的证书判别文件。
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($curl, CURLOPT_URL, $url);
+
+        $res = curl_exec($curl);
+        curl_close($curl);
+
+        return $res;
+    }
+
+
+
+}
+?>

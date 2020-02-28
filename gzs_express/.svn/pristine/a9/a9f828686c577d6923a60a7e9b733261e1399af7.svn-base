@@ -1,0 +1,210 @@
+<include file="Public:doctype"/>
+<html lang="en">
+<head>
+    <include file="Public:baseHead"/>
+</head>
+<body>
+<include file="Public:nav"/>
+<div class="formbody">
+
+    <div class="formtitle"><span>{$title}</span></div>
+    <form class="mainform" method="post" action="{:U('Car/doedit')}">
+        <input type="hidden" name="car_id" value="{$model.car_id}"/>
+        <div class="tab mt10" id="tabid1">
+            <table class="formtable">
+                <tbody>
+                <tr id="" class="">
+                    <td class="ft_title">车辆id</td>
+                    <td colspan="3">
+                        <label>{$model.car_id|default="cs"}</label>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">车主真实姓名</td>
+                    <td colspan="3">
+                        <label>{$model.true_name|default="cs"}</label>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">车牌号</td>
+                    <td colspan="3">
+                        <input value="{$model.car_number}" datatype="*" name="car_number" maxlength="50"
+                               class="bds inp  w500" nullmsg="请填写车牌号" placeholder="请填写车牌号" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写车牌号</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">押金</td>
+                    <td colspan="3">
+                        <input value="{$model.cash}" datatype="*" name="cash" maxlength="50" class="bds inp  w500"
+                               nullmsg="请填写押金" placeholder="请填写押金" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写押金</span>
+                    </td>
+                </tr>
+
+                <tr id="" class="">
+                    <td class="ft_title">车辆介绍</td>
+                    <td colspan="3">
+                        <input value="{$model.intro.describe}" name="describe" maxlength="50" datatype="*"
+                               class="bds inp  w500"
+                               nullmsg="请填写车辆介绍（必填）" placeholder="请填写车辆介绍（必填）" type="text">
+                        <font class="need show_0">*</font><span class="Validform_checktip">请填写车辆介绍（必填）</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">座位</td>
+                    <td colspan="3">
+                        <select name="seat">
+                            <foreach name="seat" item="vo">
+                                <if condition="$model.seat_id eq $vo['seat_id']">
+                                    <option value="{$vo.seat_id}" selected="selected">{$vo.seat_name}</option>
+                                    <else/>
+                                    <option value="{$vo.seat_id}">{$vo.seat_name}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择座位</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">品牌</td>
+                    <td colspan="3">
+                        <select name="brand">
+                            <foreach name="brand" item="vo">
+                                <if condition="$model.brand_id eq $vo['brand_id']">
+                                    <option value="{$vo.brand_id}" selected="selected">{$vo.brand_name}</option>
+                                    <else/>
+                                    <option value="{$vo.brand_id}">{$vo.brand_name}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择品牌</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">车型</td>
+                    <td colspan="3">
+                        <select name="carkind">
+                            <foreach name="carkind" item="vo">
+                                <if condition="$model.carkind_id eq $vo['carkind_id']">
+                                    <option value="{$vo.carkind_id}" selected="selected">{$vo.carkind_name}</option>
+                                    <else/>
+                                    <option value="{$vo.carkind_id}">{$vo.carkind_name}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择车型</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">挂挡类型</td>
+                    <td colspan="3">
+                        <select name="gear">
+                            <foreach name="gear" item="vo">
+                                <if condition="$model.gear_id eq $vo['gear_id']">
+                                    <option value="{$vo.gear_id}" selected="selected">{$vo.gear_name}</option>
+                                    <else/>
+                                    <option value="{$vo.gear_id}">{$vo.gear_name}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择挂挡类型</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">天窗类型</td>
+                    <td colspan="3">
+                        <select name="window">
+                            <foreach name="window" item="vo">
+                                <if condition="$model.window_id eq $vo['window_id']">
+                                    <option value="{$vo.window_id}" selected="selected">{$vo.window_name}</option>
+                                    <else/>
+                                    <option value="{$vo.window_id}">{$vo.window_name}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择天窗类型</span>
+                    </td>
+                </tr>
+
+                <tr id="" class="">
+                    <td class="ft_title">公里数</td>
+                    <td colspan="3">
+                        <input value="{$model.intro.mileage}" name="mileage" maxlength="50" class="bds inp  w500"
+                               nullmsg="请填写公里数" placeholder="请填写公里数" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写公里数</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">生产日期</td>
+                    <td colspan="3">
+                        <input value="{$model.intro.production}" name="production" maxlength="50" class="bds inp  w500"
+                               nullmsg="请填写生产日期" placeholder="请填写生产日期" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写座位</span>
+                    </td>
+                </tr>
+
+                <tr id="" class="">
+                    <td class="ft_title">座位配置</td>
+                    <td colspan="3">
+                        <input value="{$model.intro.seat_kind}" name="seat_kind" maxlength="50" class="bds inp  w500"
+                               nullmsg="请填写座位配置" placeholder="请填写座位配置" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写座位配置</span>
+                    </td>
+                </tr>
+
+                <tr id="" class="">
+                    <td class="ft_title">自动应答</td>
+                    <td colspan="3">
+                        <select name="self">
+                            <eq name="model['intro']['self']" value="1">
+                                <option value="1" selected="selected">有</option>
+                                <option value="0">无</option>
+                                <else/>
+                                <option value="0" selected="selected">无</option>
+                                <option value="1">有</option>
+                            </eq>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择有无</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">封面</td>
+                    <td colspan="3">
+                        <img src="{$model.pic}" alt="" class="wximg"/>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">是否有效</td>
+                    <td colspan="3">
+                        <label><input type="radio" name="valid" value="1"
+                            <eq name="model['valid']|default=1" value="1">checked</eq>
+                            />是</label>
+                        &nbsp;&nbsp;
+                        <label><input type="radio" name="valid" value="0" datatype="*"
+                            <eq name="model['valid']" value="0">checked</eq>
+                            />否</label>
+                        <font class="need show_0">*</font><span class="Validform_checktip">请选择是否有效</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <input type="submit" value="保存" class="btn button_primary btnsave" status="0">
+                        <input type="button" value="返回" class="btn button_success btnsave"
+                               onclick="javascript:history.go(-1)"/>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+    </form>
+    <div class="h10"></div>
+</div>
+<include file="Public:validformScript"/>
+</div>
+</body>
+</html>

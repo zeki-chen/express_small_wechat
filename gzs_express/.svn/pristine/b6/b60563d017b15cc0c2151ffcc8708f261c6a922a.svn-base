@@ -1,0 +1,1154 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #999999;
+}
+html{
+    font-size: 14px;
+}
+body{
+    background-color: white;
+    font-family: "微软雅黑";
+    position: relative;
+    min-height:800px;
+    overflow-y:scroll !important; overflow-y:auto;
+}
+
+.head_div{
+    background-color: #4e4e4e;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    text-align: center;
+    min-height:  80px;
+    /*margin-bottom: 45px;*/
+    
+}
+.navbar-default{
+    background-color: transparent;
+    border-color: transparent;
+
+}
+.navv{
+    margin-top: 18px;
+}
+.nav > li > a{
+    padding: 12px 23px;
+    
+}
+.VR_img{
+    position: relative;
+    top: -8px;
+    left: 108px;
+    width: 110px;
+}
+.navbar-right{
+    float: right;
+    margin-right: 6%;
+    margin-left: 2%;
+}
+.form-control{
+    background-color: #4f5456;
+    height: 28px;
+    border-radius: none;
+    opacity: 0.6;
+    color: white;
+}
+.search_btn{
+    background: url(../images/search.png) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    text-align: center;
+    min-height: 25px;
+    background-size: 100% 100%;
+    background-color: #25a7f5;
+    border: none;
+}
+.location_img{
+    position: relative;
+    top: -3px;
+    left: -3px;
+    width: 15px;
+    height: 13px;
+    height: auto;
+}
+.navbar-nav{
+    display: inline-block;
+    float: none;
+}
+.navbar-default .navbar-nav > li > a{
+    color: white;
+    font-size: 20px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: #25a7f5;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: #25a7f5;
+}
+
+.dropdown-menu li a{
+    background-color: white;
+    color: #25a7f5;
+}
+.dropdown-menu li a:hover{
+    background-color: #25a7f5;
+    color: white;
+}
+
+
+.goback{
+    position: absolute;
+    color: #767676;
+    text-decoration: none;
+    left: 0;
+}
+.goback:hover{
+    text-decoration: none;
+}
+
+.left-pro .t2{
+    width: 640px;
+    padding-left: 25px;
+}
+.left-pro{
+    width: 760px;
+    border: none;
+}
+.box{
+    margin: 20px 8%;
+}
+#showArea{
+    /*margin-top: 50%;*/
+    height: 279px;
+}
+.left-pro .t1{
+    margin-top: 50px;
+}
+.main_img{
+    width: 615px; 
+    height:400px;
+    cursor: none;
+    zoom:none;
+}
+
+.content_big_div{
+    position: relative;
+    overflow: hidden;
+}
+
+.right_div{
+    float: right;
+    border-left: 1px solid #cccccc;
+    margin-right: 5%;
+    font-size: 15px;
+    margin-top: -20px;
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    right: 0;
+    /*height: 90%;*/
+}
+.right_car_div{
+    /*border-bottom: 1px solid #cccccc;*/
+    overflow: hidden;
+    padding-left: 7%;
+    margin-left: 5%;
+    width: 300px;
+    margin-top: 10%;
+    padding-bottom: 5%;
+}
+.right_title{
+    color: #2b6a67;
+    font-size: 18px;
+    display: block;
+    text-align : left;
+    font-weight: 600;
+    line-height: 33px;
+}
+.car_style{
+    float: left;
+    font-size: 14px;
+}
+.r_price_div{
+    border: 1px solid #cccccc;
+    margin: 7% 0 5% 2.92%;
+}
+.price_s{
+    color: #25a7f5;
+    font-size: 18px;
+    margin-right: 3px;
+    margin-left: 7px;
+    position: relative;
+    top: 4px;
+}
+.goOrder_btn{
+    background-color: #25a7f5;
+    border: none;
+    height: 37px;
+    color: white;
+    font-size: 18px;
+    width: 120px;
+    position: relative;
+    /*top: -1px;*/
+    left: 1px;
+}
+.goOrder_img{
+    height: 37px;
+    margin-left: 28px;
+    right: -6px;
+    position: relative;
+}
+.price_img{
+    position: relative;
+    top: 2px;
+}
+.share_div,.shou_div{
+    border: 1px solid #cccccc;
+    display: inline-block;
+    width: content;
+    height: 36px;
+    line-height: 36px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+.shou_div{
+    margin-left: 18px;
+}
+.share_shou_img{
+    width: 23px;
+    top: -2px;
+    position: relative;
+}
+.shou_img{
+    width: 18px;
+    position: relative;
+    top: -1px;
+
+}
+.share_shou_div{
+    text-align: left;
+    margin-left:  4%;
+    padding-bottom: 7%;
+    border-bottom:none;
+}
+.t{
+    border-top:1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+.person_div{
+    text-align: left;
+    padding: 6% 0 6% 0;
+    /*border-bottom: 1px solid #cccccc;*/
+        margin-left: 5%;
+        overflow: hidden;
+        float: left;
+}
+.headImg_div{
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+.head_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.person_detail_div{
+    display: inline-block;
+    text-align: center;
+}
+.person_detail{
+    width: 62px;
+    display: inline-block;
+    border-right: 1px dashed #cccccc;
+}
+.person_detail_div{
+    width: 225px;
+    float: right;
+    height: 88px;
+    padding-top: 15px;
+    padding-left: 15px;
+
+    background: url(../images/images/dialog.png) no-repeat 0px 0px;
+    background-size: 229px 88px;
+}
+.person_detail span{
+    line-height: 30px;
+    font-size: 14px;
+}
+.person_detail_l{
+    border-right: none;
+}
+.person_detail_2{
+    width: 54px;
+    margin-left: -3px;
+}
+.person_detail_1{
+    padding-right: 5px;
+}
+.r_explain_div{
+    width: 300px;
+    margin: 0.03rem 0 0 0.03rem;
+    text-align: left;
+    clear: both;
+    border-top: 1px solid #cccccc;
+    line-height: 37px;
+}
+.r_explain_div span{
+    font-weight: bold;
+    line-height: 37px;
+}
+.explain{
+    display: block;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: fit-content;
+}
+.exp{
+    color: #25a7f5;
+}
+
+
+.content_div{
+    /*clear: both;*/
+    text-align: left;
+    margin: 0 9%;
+    font-size: 16px;
+    float: left;
+    width: 62.1%;
+    /*border-right: 1px solid #cccccc;*/
+    padding-right: 11%;
+}
+.link_div{
+    border-bottom: 1px solid #cccccc;
+    overflow: hidden;
+}
+.link_div li{
+    float: left;
+}
+.link_div li:hover{
+    /*border-bottom: 3px solid #25a7f5;*/
+}
+.link_div li a{
+    color:#2b6a67;
+    line-height: 38px;
+}
+.link_div li a:hover{
+    color: #25a7f5 !important;
+    text-decoration: none;
+    font-weight: 600;
+ }   
+.detail_li{
+    border-bottom: 3px solid #25a7f5;
+}
+.detail_link{
+    color: #25a7f5 !important;
+    font-weight: bold;
+}
+
+.car_title{
+    font-size: 17px;
+    display: block;
+    line-height: 44px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.car_detail_div{
+    font-size: 16px;
+    /*margin: 18px 0 30px;*/
+}
+.car_detail_img{
+    width: 28px;
+    height: 28px;
+    margin: 6px 12px 11px 0;
+}
+.car_detail_div li{
+    float: left;
+    display: inline-block;
+    width: 25%;
+}
+.car_title1{
+    margin-top: 33px;
+}
+
+
+.evaluate_div{
+    display: block;
+    clear: left;
+    padding-top: 55px;
+    font-size: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cccccc;
+}
+.evaluate_div h2{
+    color: black;
+    display: block;
+    font-family:"微软雅黑";
+    margin-bottom: 21px;
+    font-size: 29px;
+}
+.evaluate_num{
+    margin-left: 70px;
+    
+}
+.situation_div *{
+    width: 24%;
+    display: inline-block;
+}
+.situation_div img{
+    width: 104px;
+}
+.situation_div{
+    margin: 21px 0;
+}
+
+.sort_div{
+    border-bottom: 1px solid #cccccc;
+    padding: 15px 0;
+    font-size: 18px;
+}
+.down_img{
+    margin:0px 36px 0 3px;
+}
+
+.select_label{
+    /*margin:20px 20px 0 0;*/
+    margin-right: 20px;
+    display:inline-block;
+    font-weight: normal; 
+}
+.select_radio{
+    display:none;
+}
+.select_radioInput{
+    background-color: #fff;
+    border: 1px solid #25a7f5;
+    border-radius: 100%;
+    display: inline-block;
+    height: 18px;
+    margin-right: 10px;
+    margin-top: -2px;
+    vertical-align: middle;
+    width: 18px;
+    line-height: 1;
+}
+.select_radio:checked + .select_radioInput:after{
+    background-color: #25a7f5;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    margin: 2.04px;
+    width: 12px;
+}
+.sort_div form{
+    display: inline-block;
+    float: right;
+}
+
+
+.comment_div{
+    font-size: 18px;
+    
+}
+.comm_head_div{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 28px;
+    padding-top: 8px;
+}
+.person_name{
+    color: #767676;
+    font-weight: bold;
+    /*float: left;*/
+    /*display: block;*/
+}
+.comm_time{
+    font-size: 16px;
+    float: left;
+    margin-top: 7px;
+}
+.head_img1,.head_img2{
+    width: 55px;
+    /*margin-top: 20px;*/
+    float: left;
+    margin-right: 15px;
+}
+.comm_head{
+    width: 200px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.comment_word{
+    clear: both;
+    /*margin-top: 10px;*/
+    line-height: 36px;
+}
+.head_img2{
+    width: 50px;
+}
+.answer_word{
+    display: block;
+    line-height: 36px;
+}
+.comm_head2{
+    overflow: hidden;
+    margin-left: 18px;
+}
+.comm_time2{
+    margin-left: 66px;
+    margin-top: -1px;
+}
+.comm_car{
+    margin-right: 42px;
+    width: 74px;
+}
+
+
+.page_div{
+    text-align: center;
+}
+.page_ul{
+    margin: 50px auto;
+    overflow: hidden;
+    width: fit-content;
+    
+}
+.page_ul li{
+    float: left;
+    overflow: hidden;
+    margin: 0 5px;
+}
+.page{
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 34px;
+    color: #25a7f5;
+}
+.page:hover{
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    background-color: #25a7f5; 
+}
+.page.active{
+    border-radius: 50%;
+    color: white;
+    background-color: #25a7f5; 
+}
+.more_page{
+    border: 1px solid #25a7f5;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+
+.address_big_div{
+    margin-top: 50px;
+}
+.address_big_div h2{
+    color: black;
+    display: block;
+    font-family:"微软雅黑";
+    margin-bottom: 21px;
+    font-size: 28px;
+}
+.address_div{
+    height: 450px;
+    border: 1px solid #cccccc;
+}
+
+
+
+.similar_car_div{
+    clear: both;
+    text-align: left;
+    margin: 0 0.3rem;
+    padding-top: 50px;
+}
+.similar_car_div h3{
+    color: black;
+    display: block;
+    font-family:"微软雅黑";
+    margin-bottom: 33px;
+    font-size: 28px;
+}
+
+
+.car_explain_div{
+    /*color: black !important;*/
+    width: 80%;
+    margin: 0 auto;
+}
+.explain1{
+    color: #531210;
+    font-size: 16px;
+    display: block;
+    margin-top: 7px;
+}
+.price_t{
+    display: block;
+    color: #595959;
+    font-size: 18px;
+}
+.location2{
+    position: relative;
+    top: -3px;
+    /*left: -3px;*/
+    width: 15px !important;
+    height: 13px;
+    height: auto;
+    display: inline-block !important;
+}
+.address{
+    color: #595959;
+    display: inline-block;
+    font-size: 18px;
+    background: url(../images/images/location2.png) no-repeat;
+    text-indent: 17px;
+    background-size: 14px;
+    background-size: 18px 25px;
+    line-height: 30px;
+    margin-top: 5px;
+}
+.xing{
+    width: 100px !important;
+    display: inline-block !important;
+}
+.owl-carousel .owl-item img{
+    width: 80%;
+    margin: 0 auto;
+}
+.owl-prev{
+    vertical-align: middle;
+    position: absolute;
+    left: -0.05rem;
+    top: 25%;
+}
+.owl-next{
+    vertical-align: middle;
+    position: absolute;
+    right: -0.04rem;
+    top: 25%;
+}
+.owl-theme .owl-controls .owl-nav div{
+    background: none;
+}
+.xing_num{
+    position: relative;
+    color: #767676;
+    font-size: 17px;
+    top: 4px;
+    left: 7px;
+}
+.car_img{
+    /*background: url(../images/images/shoucang.png) no-repeat;
+    background-position: right;*/
+    height: 250px;
+}
+.car_shou_img{
+    width: 24px !important;
+    position: absolute;
+    right: 12%;
+    top: 2%;
+    cursor: pointer;
+}
+
+
+.bottom_div{
+    margin-top: 75px;
+    text-align: center;
+    background-color: #505050;
+    padding-top: 58px;
+    padding-bottom: 10px;
+}
+.b_div{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.bottom_about_div1{
+    padding-left: 0.35rem;
+}
+.bottom_about_div span{
+    display: block;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+}
+.bottom_about_div a{
+    display: block;
+    color: black;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+}
+.bottom_about_div a:hover{
+    color: #25a7f5;
+}
+.contact_ul{
+    margin-bottom: 10px;
+}
+.contact_ul li{
+    display: inline-block;  
+}
+.link{
+    display: inline-block;
+    color: #999999;
+    height: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    margin-left: -2px;
+    padding-right: 2px;
+    border-right: 1px solid #999999;
+    font-family: "华文新魏";
+    font-size: 18px;
+}
+.last_link{
+    border-right: none;
+}
+.bottom_detail{
+    color: #999999;
+    margin-top: 7px;
+    display: block;
+    font-family: "华文新魏";
+    font-size: 18px;
+}
+.erweima{
+    margin: 13px 10px 28px 10px;
+}
+
+
+.black_overlay{ 
+             display: none; 
+             position: absolute; 
+             top: 0%; 
+             left: 0%; 
+             width: 100%; 
+             height: 100%; 
+             background-color: black; 
+             z-index:999; 
+             -moz-opacity: 0.6; 
+             opacity:.60; 
+             filter: alpha(opacity=60); 
+}
+.close_login_reg{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+.close_lr_img{
+    width: 33px;
+
+}
+.register_div,.login_div,.go_order_div{
+    display: none;
+    position: fixed;
+    top: 100px;
+    z-index: 1001;
+    background-color: white;
+    width: 38%;
+    margin: 0 auto;
+    padding-top: 50px;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 80px;
+    padding-left: 24px;
+    text-align: left;
+
+}
+.register_div span,.login_div span{
+    font-size: 14px;
+    color: black;
+}
+.login_div{
+    width: 33%;
+    padding-top: 80px;
+    padding-bottom: 180px;
+    padding-left: 0;
+    text-align: left;
+}
+
+.auto_login{
+    /*display: block;*/
+}
+.login_n{
+    width: 210px;
+    display: block;
+    margin-top: 13px;
+    
+}
+.reg_title{
+    font-family: "微软雅黑";
+    margin-bottom: 25px;
+}
+h2 {
+    font-weight: 500;
+    letter-spacing: 6px;
+    font-size: 35px;
+}
+.forget_pw{
+    float: right;
+    margin-top: 0 !important;
+    font-size: 14px;
+}
+.reg_ipt{
+    border: 1px solid #c2c2c2;
+    color: #cccccc;
+    height: 33px;
+    line-height: 33px;
+    text-indent: 10px;
+    width: 220px;
+    box-shadow: 0px 0px 8px #eaeaea inset;
+    font-size: 16px;
+}
+input:focus {
+    /*border: 2px solid yellow;*/
+    outline:2px solid #040a2b;
+    color: black;
+}
+.phone_ipt{
+    display: block;
+}
+.login_content_div{
+    width: 42%;
+    margin: 0 auto;
+    color: black;
+}
+.reg_content_div{
+    width: 59%;
+    margin: 0 auto;
+    color: black;
+}
+.reg_content_div *{
+    margin-top: 10px;
+}
+/*.read_radio{
+    display: block;
+}*/
+.explain2{
+    display: block;
+}
+.login_expalin{
+    letter-spacing: 3px;
+}
+.reg_btn{
+    /*width: 60%;*/
+    background-color: #040a2b;
+    color: white;
+    display: block;
+    border: none;
+    height: 35px;
+    margin: 13px 0;
+    width: 210px;
+}
+.denglu{
+    color: black;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 14px;
+}
+.please_denglu{
+    font-size: 15px;
+}
+
+.demo--radio{display:none}
+.demo--radio:checked + .demo--radioInput:after{
+    background-color:#25a7f5;
+    border-radius:100%;content:"";
+    display:inline-block;height: 10.2px;
+    margin: 1.46px;
+    width: 10.2px;
+}
+.demo--checkbox.demo--radioInput,.demo--radio:checked + .demo--checkbox.demo--radioInput:after{border-radius:0}
+.demo--radioInput{
+    background-color: #fff;
+    border: 1px solid #999999;
+    border-radius: 100%;
+    display: inline-block;
+    height: 15px;
+    margin-right: 4px;
+    margin-top: -4px;
+    vertical-align: middle;
+    width: 15px;
+    line-height: 1;
+    margin-left: 5px;
+}
+.show_p{
+    font-weight: normal;
+    color: black;
+}
+.phone_check_btn{
+    background-color: white;
+    border: none;
+    font-size: 14px;
+}
+.read_div{
+    height: content;
+}
+
+.login_div .reg_ipt{
+    margin-top: 28px !important;
+}
+.login_div .reg_btn{
+    margin: 22px 0;
+}
+.login_div .demo--label{
+    margin-top: 0;
+}
+.show_pw_label
+{
+    margin-top: 16px;
+    position: absolute;
+}
+.denglu.login_expalin{
+    font-size: 14px;
+}
+.go_order_div{
+    display: none;
+    width: 27%;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.go_order_title{
+    font-size: 15px;
+    color: black;
+    margin-right: 10px;
+}
+.go_order_title1{
+    margin-right: 35px;
+}
+.go_order_list{
+    margin: 16px auto;
+}
+.go_order_btn{
+    margin: 0 auto;
+    font-size: 14px;
+}
+.go_order_ipt{
+    width: 180px;
+}
+.iw_poi_title {
+        color: #CC5522;
+        font-size:14px;
+        font-weight:bold;
+        overflow:hidden;
+        padding-right:13px;
+        white-space:nowrap
+    }
+    .iw_poi_content {
+        font:12px arial,sans-serif;
+        overflow:visible;
+        padding-top:4px;
+        white-space:-moz-pre-wrap;
+        word-wrap:break-word
+    }
+    .map_div{
+        
+        height:448px;
+        border:#ccc solid 1px;
+    }
+    #dituContent{
+        height:448px;
+    }
+.go_order_div h2{
+    color: black;
+    letter-spacing: 3px;
+    font-size: 33px;
+}
+.insurance{
+    font-size: 15px;
+    color: black;
+    font-weight: normal;
+    /*float: left;*/
+}
+.know{
+    margin-left: 50px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    /*text-decoration: underline;*/
+}
+.order_explain{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: left;
+}
+.insurance_price{
+    position: relative;
+    top: -1px;
+    font-size: 13px;
+    color: red;
+}
+.location_a{
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1296px) {
+    .box{
+        margin: 20px 0.2rem;
+    }
+    .right_div{
+        margin-right: 0.05rem;
+    }
+    .login_div,.register_div{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1178px) {
+    .main_img{
+        width: 1.4rem;
+        height: 380px;
+    }
+    .login_div,.register_div,.go_order_div{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width: 1056px) {
+    .right_div{
+        float: left;
+        border-left: none;
+        margin-right: 0;
+        margin-top: 0;
+        position: relative;
+        margin-left: 0.3rem;
+        margin-bottom: 60px;
+    }
+    .content_div{
+        width: 92%;
+    }
+    .main_img{
+        width: 2.4rem;
+    }
+    .box{
+        margin: 20px 0.25rem;
+    }
+    
+    .r_price_div{
+        display: inline-block;
+    }
+    .share_shou_div{
+        display: inline-block;
+        top: 4px;
+        position: relative;
+    }
+    .right_car_div{
+        width: none;
+    }
+    .person_detail_div{
+        float: none;
+    }
+    .r_explain_div{
+        width: fit-content;
+    }
+    
+    .navbar-brand{
+        margin-left: -0.2rem;
+    }
+    .nav > li > a{
+        padding: 12px 18px;
+    }
+    .login_div,.register_div,.go_order_div{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    .box{
+        margin: 20px 0.05rem;
+    }
+    .navbar-brand{
+        margin-left: -0.3rem;
+    }
+    .nav > li > a{
+        padding: 12px 15px;
+    }
+    .login_div,.register_div,.go_order_div{
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 727px) {
+    
+    .car_detail_img{
+        margin: 6px 2px 11px 0;
+    }
+    .content_div{
+        width: 97%;
+    }
+    .left-pro .t2{
+        padding-left: 0;
+    }
+    .login_div,.register_div,.go_order_div{
+        width: 63%;
+    }
+}
+@media screen and (max-width: 609px) {
+    .select_label{
+        margin-right: 3px;
+    }
+    .down_img{
+        margin: 0px 16px 0 3px;
+    }
+    .main_img{
+        width: 2rem;
+    }
+    .t{
+        float: left;
+        text-align: left;
+    }
+    .login_div,.register_div,.go_order_div{
+        width: 73%;
+    }
+    .car_img{
+        height: 180px;
+    }
+    .owl-prev{
+        left: -0.22rem;
+        top: 20%;
+    }
+    .owl-next{
+        right: -0.22rem;
+        top: 19%;
+    }
+    .content_div{
+        margin: 0 7%;
+    }
+    
+
+}
+@media screen and (max-width: 568px) {
+    .login_div,.register_div,.go_order_div{
+        width: 93%;
+    }
+    .right_div{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .goOrder_img{
+        right: -7px;
+    }
+    .situation_div *{
+        width: 38%;
+        margin-bottom: 10px;
+    }
+    .VR_img{
+        left: 58px;
+    }
+
+}

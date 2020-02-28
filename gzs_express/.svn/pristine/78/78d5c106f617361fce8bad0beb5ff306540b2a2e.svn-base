@@ -1,0 +1,76 @@
+<include file="Public:doctype"/>
+<html lang="en">
+<head>
+    <include file="Public:baseHead"/>
+</head>
+<body>
+<include file="Public:nav"/>
+
+<div class="formbody">
+
+    <div class="formtitle"><span>{$title}</span></div>
+
+    <div class="tab mt10" id="tabid1">
+        <form class="mainform" method="post" action="{:U('Admin/doAdd')}">
+            <table class="formtable">
+    <tbody>
+    <eq name="Think.ACTION_NAME" value="add">
+        <tr id="" class="">
+            <td class="ft_title">管理员账号</td>
+
+            <td colspan="3">
+                <input value="{$conf.webName}" name="aname" maxlength="50" datatype="*,checkName" class="bds inp  w500" nullmsg="请填写管理员账号（必填）" errormsg="用户名已被占用" placeholder="请填写管理员账号（必填）" type="text">
+                <font class="need show_0">*</font><span class="Validform_checktip">请填写管理员账号（必填）</span>
+            </td>
+        </tr>
+        <tr id="" class="">
+            <td class="ft_title">密码</td>
+            <td colspan="3">
+                <input value="{$conf.serverName}" datatype="*3-18" name="pwd" maxlength="18" class="bds inp  w500" nullmsg="请填写密码（必填）" placeholder="请填写密码（必填）" type="password">
+                <font class="need show_0">*</font><span class="Validform_checktip">请填写密码（必填）</span>
+            </td>
+        </tr>
+        <tr id="" class="">
+            <td class="ft_title">确认密码</td>
+            <td colspan="3">
+                <input datatype="*3-18" recheck="pwd" maxlength="18" class="bds inp  w500" nullmsg="请再次输入密码（必填）" placeholder="请再次输入密码（必填）" type="password">
+                <font class="need show_0">*</font><span class="Validform_checktip">请再次输入密码（必填）</span>
+            </td>
+        </tr>
+        <else/>
+        <tr id="" class="">
+            <td class="ft_title">管理员账号</td>
+
+            <td colspan="3">
+                <label>{$model.aname|default="cs"}</label>
+            </td>
+        </tr>
+    </eq>
+   
+  
+    <tr id="" class="">
+        <td class="ft_title">是否有效</td>
+        <td colspan="3">
+            <label><input type="radio" name="valid" value="1" <eq name="model['valid']|default=1" value="1">checked</eq>/>是</label>
+            &nbsp;&nbsp;
+            <label><input type="radio" name="valid" value="0" datatype="*" <eq name="model['valid']" value="0">checked</eq>/>否</label>
+            <font class="need show_0">*</font><span class="Validform_checktip">请选择是否有效</span>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <input type="submit" value="保存" class="btn button_primary btnsave" status="0">
+            <input type="button" value="返回" class="btn button_success btnsave" onclick="javascript:history.go(-1)" />
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+        </form>
+    </div>
+    <include file="Public:validformScript"/>
+    <div class="h10"></div>
+</div>
+</body>
+</html>

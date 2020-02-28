@@ -1,0 +1,1964 @@
+---------------------------------------------------------------
+[ 2018-11-22T09:07:03+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.290703s][吞吐率：3.44req/s] [内存消耗：853.36kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:33]
+---------------------------------------------------------------
+[ 2018-11-22T09:07:36+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.077436s][吞吐率：12.91req/s] [内存消耗：852.40kb] [文件加载：28]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:33]
+---------------------------------------------------------------
+[ 2018-11-22T09:08:59+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.120450s][吞吐率：8.30req/s] [内存消耗：863.95kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:09:35+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.043890s][吞吐率：22.78req/s] [内存消耗：864.77kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:09:41+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.024466s][吞吐率：40.87req/s] [内存消耗：863.95kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:11:00+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.024453s][吞吐率：40.89req/s] [内存消耗：864.77kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:11:05+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.047238s][吞吐率：21.17req/s] [内存消耗：863.95kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:11:27+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.124773s][吞吐率：8.01req/s] [内存消耗：872.80kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::getToken() must be of the type array, null given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php on line 67[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:21]
+---------------------------------------------------------------
+[ 2018-11-22T09:12:02+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.038334s][吞吐率：26.09req/s] [内存消耗：864.81kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:12:41+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.049648s][吞吐率：20.14req/s] [内存消耗：863.99kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:13:33+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index?errMsg=login%3Aok&code=071brVGy0zPiSg1ZAjGy0vgZGy0brVGe
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index?errMsg=login%3Aok&code=071brVGy0zPiSg1ZAjGy0vgZGy0brVGe [运行时间：0.104738s][吞吐率：9.55req/s] [内存消耗：865.86kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'errMsg' => 'login:ok',
+  'code' => '071brVGy0zPiSg1ZAjGy0vgZGy0brVGe',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:15:40+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.081196s][吞吐率：12.32req/s] [内存消耗：864.81kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:17:54+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.085367s][吞吐率：11.71req/s] [内存消耗：865.13kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '32',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: code[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php:26]
+---------------------------------------------------------------
+[ 2018-11-22T09:19:09+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.841105s][吞吐率：1.19req/s] [内存消耗：1,584.62kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081AALwU1PwsyW06zDzU1MFIwU1AALwc',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005717s ] mysql:host=127.0.0.1;port=3306;dbname=fastmail;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wx_user` [ RunTime:0.010861s ]
+[ sql ] [ SQL ] SELECT * FROM `wx_user` WHERE  `openid` = 'o4y9c5ZWmNEAq2I2CvTwR_0AGbqw' LIMIT 1 [ RunTime:0.000834s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\library\think\db\Connection.php:463]
+---------------------------------------------------------------
+[ 2018-11-22T09:20:03+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.501154s][吞吐率：2.00req/s] [内存消耗：1,584.62kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081iF5di0OUXgo10ACei0Twadi0iF5dv',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001557s ] mysql:host=127.0.0.1;port=3306;dbname=fastmail;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wx_user` [ RunTime:0.015655s ]
+[ sql ] [ SQL ] SELECT * FROM `wx_user` WHERE  `openid` = 'o4y9c5ZWmNEAq2I2CvTwR_0AGbqw' LIMIT 1 [ RunTime:0.000790s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\library\think\db\Connection.php:463]
+---------------------------------------------------------------
+[ 2018-11-22T09:21:04+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.483818s][吞吐率：2.07req/s] [内存消耗：1,615.37kb] [文件加载：37]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071EaytX1tpsGT0bsxtX1ywitX1EaytC',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002215s ] mysql:host=127.0.0.1;port=3306;dbname=fastmail;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wx_user` [ RunTime:0.023357s ]
+[ sql ] [ SQL ] SELECT * FROM `wx_user` WHERE  `openid` = 'o4y9c5ZWmNEAq2I2CvTwR_0AGbqw' LIMIT 1 [ RunTime:0.000863s ]
+[ error ] [0]method not exist:think\db\Query->updata[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\library\think\db\Query.php:96]
+---------------------------------------------------------------
+[ 2018-11-22T09:21:42+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.451591s][吞吐率：2.21req/s] [内存消耗：1,431.45kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'code' => '0717QWnB0PdcMf2tmKnB0jXXnB07QWnd',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011363s ] mysql:host=127.0.0.1;port=3306;dbname=fastmail;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wx_user` [ RunTime:0.010243s ]
+[ sql ] [ SQL ] SELECT * FROM `wx_user` WHERE  `openid` = 'o4y9c5ZWmNEAq2I2CvTwR_0AGbqw' LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] UPDATE `wx_user`  SET `uptime`='2018-11-22 09:21:42'  WHERE  `openid` = 'o4y9c5ZWmNEAq2I2CvTwR_0AGbqw' [ RunTime:0.000760s ]
+---------------------------------------------------------------
+[ 2018-11-22T10:14:13+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.063163s][吞吐率：15.83req/s] [内存消耗：859.60kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '52',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'keys' => 
+  array (
+    0 => 'token',
+  ),
+  'currentSize' => 1,
+  'limitSize' => 10240,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: Request[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php:23]
+---------------------------------------------------------------
+[ 2018-11-22T10:14:47+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.026381s][吞吐率：37.91req/s] [内存消耗：869.48kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '52',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'keys' => 
+  array (
+    0 => 'token',
+  ),
+  'currentSize' => 1,
+  'limitSize' => 10240,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:15:39+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.016397s][吞吐率：60.99req/s] [内存消耗：765.95kb] [文件加载：25]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '52',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'keys' => 
+  array (
+    0 => 'token',
+  ),
+  'currentSize' => 1,
+  'limitSize' => 10240,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:17:11+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.047370s][吞吐率：21.11req/s] [内存消耗：765.95kb] [文件加载：25]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '52',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'keys' => 
+  array (
+    0 => 'token',
+  ),
+  'currentSize' => 1,
+  'limitSize' => 10240,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:17:57+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.015769s][吞吐率：63.42req/s] [内存消耗：765.95kb] [文件加载：25]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '52',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'keys' => 
+  array (
+    0 => 'token',
+  ),
+  'currentSize' => 1,
+  'limitSize' => 10240,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:18:40+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.019920s][吞吐率：50.20req/s] [内存消耗：764.71kb] [文件加载：25]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:18:57+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.010094s][吞吐率：99.07req/s] [内存消耗：764.71kb] [文件加载：25]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:19:36+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.026731s][吞吐率：37.41req/s] [内存消耗：764.71kb] [文件加载：25]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:20:11+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.021413s][吞吐率：46.70req/s] [内存消耗：764.71kb] [文件加载：25]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:20:52+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.017764s][吞吐率：56.29req/s] [内存消耗：764.45kb] [文件加载：25]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:22:41+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.030113s][吞吐率：33.21req/s] [内存消耗：868.81kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:24:07+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.016470s][吞吐率：60.72req/s] [内存消耗：868.81kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:26:26+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.029990s][吞吐率：33.34req/s] [内存消耗：868.81kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:28:17+08:00 ] 127.0.0.1 GET /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.019809s][吞吐率：50.48req/s] [内存消耗：868.24kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:28:31+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.027679s][吞吐率：36.13req/s] [内存消耗：868.81kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:29:11+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.019852s][吞吐率：50.37req/s] [内存消耗：858.91kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]Array to string conversion[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php:23]
+---------------------------------------------------------------
+[ 2018-11-22T10:29:46+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.029048s][吞吐率：34.43req/s] [内存消耗：868.95kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:30:12+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.023825s][吞吐率：41.97req/s] [内存消耗：868.95kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '267',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:30:49+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.027467s][吞吐率：36.41req/s] [内存消耗：870.25kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:31:11+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.020230s][吞吐率：49.43req/s] [内存消耗：870.25kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:31:42+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.033238s][吞吐率：30.09req/s] [内存消耗：777.37kb] [文件加载：26]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:32:21+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.029213s][吞吐率：34.23req/s] [内存消耗：777.37kb] [文件加载：26]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:33:36+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.015662s][吞吐率：63.85req/s] [内存消耗：777.66kb] [文件加载：26]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:33:59+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.018821s][吞吐率：53.13req/s] [内存消耗：777.85kb] [文件加载：26]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:34:20+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.027369s][吞吐率：36.54req/s] [内存消耗：777.73kb] [文件加载：26]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:38:20+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.024351s][吞吐率：41.07req/s] [内存消耗：861.09kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php:23]
+---------------------------------------------------------------
+[ 2018-11-22T10:39:13+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.034708s][吞吐率：28.81req/s] [内存消耗：860.69kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php:23]
+---------------------------------------------------------------
+[ 2018-11-22T10:42:05+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.032624s][吞吐率：30.65req/s] [内存消耗：860.69kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '289',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'array(1) {
+  ["code"]=>
+  string(32) "0717QWnB0PdcMf2tmKnB0jXXnB07QWnd"
+}
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IktvamNXSEhUZ3RPSmJHRUx2UUtDblE9PSIsIm9wZW5pZCI6Im80eTljNVpXbU5FQXEySTJDdlR3Ul8wQUdicXcifQ.UkViyIH4EljpDMN-gfAleR8ktBQSpJu-_mqHhNBJAD0"',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php:23]
+---------------------------------------------------------------
+[ 2018-11-22T10:44:37+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.022327s][吞吐率：44.79req/s] [内存消耗：859.59kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '12',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php:23]
+---------------------------------------------------------------
+[ 2018-11-22T10:44:38+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Login/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Login/index [运行时间：0.595463s][吞吐率：1.68req/s] [内存消耗：1,431.44kb] [文件加载：32]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '43',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'code' => '081s1eTJ1WIBB50ySDUJ1SqkTJ1s1eTn',
+)
+[ info ] [ RUN ] app\index\controller\Login->index[ E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002585s ] mysql:host=127.0.0.1;port=3306;dbname=fastmail;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wx_user` [ RunTime:0.013751s ]
+[ sql ] [ SQL ] SELECT * FROM `wx_user` WHERE  `openid` = 'o4y9c5ZWmNEAq2I2CvTwR_0AGbqw' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] UPDATE `wx_user`  SET `uptime`='2018-11-22 10:44:38'  WHERE  `openid` = 'o4y9c5ZWmNEAq2I2CvTwR_0AGbqw' [ RunTime:0.000735s ]
+---------------------------------------------------------------
+[ 2018-11-22T10:45:17+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.023394s][吞吐率：42.75req/s] [内存消耗：872.55kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '525',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 
+  array (
+    'data' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IlR2OEVPZFwvV1VQYzU1UG1ScW1zbE5RPT0iLCJvcGVuaWQiOiJvNHk5YzVaV21ORUFxMkkyQ3ZUd1JfMEFHYnF3In0.1uUtvmbvy3jWjKdBre_4MJD8vLIN7lnDxeKPnVmNBco',
+    'header' => 
+    array (
+      'Date' => 'Thu, 22 Nov 2018 02:44:37 GMT',
+      'Server' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+      'X-Powered-By' => 'PHP/7.2.1',
+      'Keep-Alive' => 'timeout=5, max=100',
+      'Connection' => 'Keep-Alive',
+      'Transfer-Encoding' => 'chunked',
+      'Content-Type' => 'text/html; charset=UTF-8',
+    ),
+    'statusCode' => 200,
+    'errMsg' => 'request:ok',
+  ),
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:46:08+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.025009s][吞吐率：39.99req/s] [内存消耗：872.55kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '525',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 
+  array (
+    'data' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IlR2OEVPZFwvV1VQYzU1UG1ScW1zbE5RPT0iLCJvcGVuaWQiOiJvNHk5YzVaV21ORUFxMkkyQ3ZUd1JfMEFHYnF3In0.1uUtvmbvy3jWjKdBre_4MJD8vLIN7lnDxeKPnVmNBco',
+    'header' => 
+    array (
+      'Date' => 'Thu, 22 Nov 2018 02:44:37 GMT',
+      'Server' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+      'X-Powered-By' => 'PHP/7.2.1',
+      'Keep-Alive' => 'timeout=5, max=100',
+      'Connection' => 'Keep-Alive',
+      'Transfer-Encoding' => 'chunked',
+      'Content-Type' => 'text/html; charset=UTF-8',
+    ),
+    'statusCode' => 200,
+    'errMsg' => 'request:ok',
+  ),
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:48:03+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.026664s][吞吐率：37.50req/s] [内存消耗：863.42kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '525',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 
+  array (
+    'data' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IlR2OEVPZFwvV1VQYzU1UG1ScW1zbE5RPT0iLCJvcGVuaWQiOiJvNHk5YzVaV21ORUFxMkkyQ3ZUd1JfMEFHYnF3In0.1uUtvmbvy3jWjKdBre_4MJD8vLIN7lnDxeKPnVmNBco',
+    'header' => 
+    array (
+      'Date' => 'Thu, 22 Nov 2018 02:44:37 GMT',
+      'Server' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+      'X-Powered-By' => 'PHP/7.2.1',
+      'Keep-Alive' => 'timeout=5, max=100',
+      'Connection' => 'Keep-Alive',
+      'Transfer-Encoding' => 'chunked',
+      'Content-Type' => 'text/html; charset=UTF-8',
+    ),
+    'statusCode' => 200,
+    'errMsg' => 'request:ok',
+  ),
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php:23]
+---------------------------------------------------------------
+[ 2018-11-22T10:48:46+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.031563s][吞吐率：31.68req/s] [内存消耗：863.20kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '525',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 
+  array (
+    'data' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IlR2OEVPZFwvV1VQYzU1UG1ScW1zbE5RPT0iLCJvcGVuaWQiOiJvNHk5YzVaV21ORUFxMkkyQ3ZUd1JfMEFHYnF3In0.1uUtvmbvy3jWjKdBre_4MJD8vLIN7lnDxeKPnVmNBco',
+    'header' => 
+    array (
+      'Date' => 'Thu, 22 Nov 2018 02:44:37 GMT',
+      'Server' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+      'X-Powered-By' => 'PHP/7.2.1',
+      'Keep-Alive' => 'timeout=5, max=100',
+      'Connection' => 'Keep-Alive',
+      'Transfer-Encoding' => 'chunked',
+      'Content-Type' => 'text/html; charset=UTF-8',
+    ),
+    'statusCode' => 200,
+    'errMsg' => 'request:ok',
+  ),
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php:23]
+---------------------------------------------------------------
+[ 2018-11-22T10:49:13+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.031916s][吞吐率：31.33req/s] [内存消耗：872.55kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '525',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 
+  array (
+    'data' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IlR2OEVPZFwvV1VQYzU1UG1ScW1zbE5RPT0iLCJvcGVuaWQiOiJvNHk5YzVaV21ORUFxMkkyQ3ZUd1JfMEFHYnF3In0.1uUtvmbvy3jWjKdBre_4MJD8vLIN7lnDxeKPnVmNBco',
+    'header' => 
+    array (
+      'Date' => 'Thu, 22 Nov 2018 02:44:37 GMT',
+      'Server' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+      'X-Powered-By' => 'PHP/7.2.1',
+      'Keep-Alive' => 'timeout=5, max=100',
+      'Connection' => 'Keep-Alive',
+      'Transfer-Encoding' => 'chunked',
+      'Content-Type' => 'text/html; charset=UTF-8',
+    ),
+    'statusCode' => 200,
+    'errMsg' => 'request:ok',
+  ),
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:50:11+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.019024s][吞吐率：52.56req/s] [内存消耗：872.55kb] [文件加载：31]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '525',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 
+  array (
+    'data' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IlR2OEVPZFwvV1VQYzU1UG1ScW1zbE5RPT0iLCJvcGVuaWQiOiJvNHk5YzVaV21ORUFxMkkyQ3ZUd1JfMEFHYnF3In0.1uUtvmbvy3jWjKdBre_4MJD8vLIN7lnDxeKPnVmNBco',
+    'header' => 
+    array (
+      'Date' => 'Thu, 22 Nov 2018 02:44:37 GMT',
+      'Server' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+      'X-Powered-By' => 'PHP/7.2.1',
+      'Keep-Alive' => 'timeout=5, max=100',
+      'Connection' => 'Keep-Alive',
+      'Transfer-Encoding' => 'chunked',
+      'Content-Type' => 'text/html; charset=UTF-8',
+    ),
+    'statusCode' => 200,
+    'errMsg' => 'request:ok',
+  ),
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Argument 1 passed to JWT\Jwt::verifyToken() must be of the type string, array given, called in E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\application\index\controller\Base.php on line 27[E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\extend\JWT\JWT.php:42]
+---------------------------------------------------------------
+[ 2018-11-22T10:50:45+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.014172s][吞吐率：70.56req/s] [内存消耗：780.41kb] [文件加载：26]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '525',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 
+  array (
+    'data' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IlR2OEVPZFwvV1VQYzU1UG1ScW1zbE5RPT0iLCJvcGVuaWQiOiJvNHk5YzVaV21ORUFxMkkyQ3ZUd1JfMEFHYnF3In0.1uUtvmbvy3jWjKdBre_4MJD8vLIN7lnDxeKPnVmNBco',
+    'header' => 
+    array (
+      'Date' => 'Thu, 22 Nov 2018 02:44:37 GMT',
+      'Server' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+      'X-Powered-By' => 'PHP/7.2.1',
+      'Keep-Alive' => 'timeout=5, max=100',
+      'Connection' => 'Keep-Alive',
+      'Transfer-Encoding' => 'chunked',
+      'Content-Type' => 'text/html; charset=UTF-8',
+    ),
+    'statusCode' => 200,
+    'errMsg' => 'request:ok',
+  ),
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-22T10:56:17+08:00 ] 127.0.0.1 POST /myTP5project/tp5/public/index.php/index/Index/index
+[ info ] jesv6y.natappfree.cc/myTP5project/tp5/public/index.php/index/Index/index [运行时间：0.017992s][吞吐率：55.58req/s] [内存消耗：780.20kb] [文件加载：26]
+[ info ] [ LANG ] E:\phpStudy\PHPTutorial\WWW\myTP5project\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-real-ip' => '117.136.41.51',
+  'x-natapp-ip' => '117.136.41.51',
+  'referer' => 'https://servicewechat.com/wxf629f92f9ba00691/devtools/page-frame.html',
+  'pragma' => 'no-cache',
+  'origin' => 'http://127.0.0.1:52689',
+  'content-type' => 'application/json',
+  'connection' => 'close',
+  'cache-control' => 'no-cache',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'content-length' => '525',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1810250 MicroMessenger/6.5.7 Language/zh_CN webview/ token/0e9c40fa05a1fb9b9e490a561a05b6fb',
+  'host' => 'jesv6y.natappfree.cc',
+)
+[ info ] [ PARAM ] array (
+  'token' => 
+  array (
+    'data' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6IlR2OEVPZFwvV1VQYzU1UG1ScW1zbE5RPT0iLCJvcGVuaWQiOiJvNHk5YzVaV21ORUFxMkkyQ3ZUd1JfMEFHYnF3In0.1uUtvmbvy3jWjKdBre_4MJD8vLIN7lnDxeKPnVmNBco',
+    'header' => 
+    array (
+      'Date' => 'Thu, 22 Nov 2018 02:44:37 GMT',
+      'Server' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9',
+      'X-Powered-By' => 'PHP/7.2.1',
+      'Keep-Alive' => 'timeout=5, max=100',
+      'Connection' => 'Keep-Alive',
+      'Transfer-Encoding' => 'chunked',
+      'Content-Type' => 'text/html; charset=UTF-8',
+    ),
+    'statusCode' => 200,
+    'errMsg' => 'request:ok',
+  ),
+)
+[ info ] [ LOG ] INIT File

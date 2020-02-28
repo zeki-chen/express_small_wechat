@@ -1,0 +1,33 @@
+[ 2018-08-14T12:43:52+08:00 ] ::1 /czq/Vrent/index.php/Index/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `v_user` [ RunTime:0.0310s ]
+SQL: SELECT * FROM `v_user` WHERE `tel` = '' AND `pwd` = '' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `v_car` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `v_car` LIMIT 0,8   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `v_carkind` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `v_brand` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `v_gear` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `v_window` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `v_seat` [ RunTime:0.0130s ]
+SQL: SELECT car.car_id AS car_id,car.intro AS intro,car.car_number AS car_number,car.type AS type,car.user_id AS user_id,car.price AS price,car.senttime AS senttime,car.sentdate AS sentdate,car.cash AS cash,car.valid AS valid,car.addtime AS addtime,car.updatetime AS updatetime,car.ext AS ext,car.pic AS pic,car.address AS address,car.seat_id AS seat_id,car.gear_id AS gear_id,car.carkind_id AS carkind_id,car.window_id AS window_id,car.brand_id AS brand_id,user.user_name AS user_name,user.headimgurl AS headimgurl,user.tel AS tel,user.true_name AS true_name,carkind.carkind_name AS carkind_name,brand.brand_name AS brand_name,gear.gear_name AS gear_name,window.window_name AS window_name,seat.seat_name AS seat_name FROM v_car car LEFT JOIN v_user user ON car.user_id=user.user_id LEFT JOIN v_carkind carkind ON car.carkind_id=carkind.carkind_id LEFT JOIN v_brand brand ON car.brand_id=brand.brand_id LEFT JOIN v_gear gear ON car.gear_id=gear.gear_id LEFT JOIN v_window window ON car.window_id=window.window_id LEFT JOIN v_seat seat ON car.seat_id=seat.seat_id LIMIT 0,3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 104 行.
+NOTIC: [8] Use of undefined constant user_id - assumed 'user_id' D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 158 行.
+NOTIC: [8] Undefined variable: user D:\phps\PHPTutorial\WWW\czq\Vrent\Application\Runtime\Cache\Index\5f343310d4a83e1c2f6d4e5a6181e90a.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,76 @@
+<include file="Public:doctype" />
+<html lang="en">
+<head>
+    <include file="Public:baseHead" />
+</head>
+<foreach>
+<include file="Public:nav"/>
+<div class="formbody">
+
+    <div class="formtitle"><span>{$title}</span></div>
+
+    <div class="tab mt10" id="tabid1">
+
+        <table class="formtable">
+            <tbody>
+            <tr id="" class="">
+                <td class="ft_title">租户头像</td>
+                <td colspan="3">
+                    <img class="wximg" src="{$model.headimgurl}"/>
+                </td>
+            </tr>
+            <tr id="" class="">
+                <td class="ft_title">租户昵称</td>
+                <td colspan="3">{$model.user_name}</td>
+            </tr>
+            <tr id="" class="">
+                <td class="ft_title">车牌号</td>
+                <td colspan="3">{$model.car_number}</td>
+            </tr>
+            <tr id="" class="">
+                <td class="ft_title">出租时间</td>
+                <td colspan="3">{:date('Y-m-d H:i:s',$model['addtime'])}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <input type="button" value="返回" class="btn button_success btnsave" onclick="javascript:history.go(-1)" />
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="formtitle"><span>评论详情</span></div>
+    <foreach name="list" item="vo">
+        <div class="tab mt10" id="tabid1">
+        <table class="formtable">
+            <tbody>
+                <tr id="" class="">
+                    <td class="">
+                        <div class="sptimg">
+                            <img class="wximg" src="{$vo.headimgurl}"/>
+                            <label>{$vo.user_name}</label>
+                        </div>
+                    </td>
+                    <td colspan="3">{$vo.content}</td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">打分</td>
+                    <td colspan="3">{$vo.grade}</td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">评论时间</td>
+                    <td colspan="3">{:date('Y-m-d H:i:s',$vo['addtime'])}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</foreach>
+    <div class="h10"></div>
+</div>
+
+</div>
+</body>
+</html>

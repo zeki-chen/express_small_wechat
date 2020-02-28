@@ -1,0 +1,239 @@
+<include file="Public:doctype"/>
+<html lang="en">
+<head>
+    <include file="Public:baseHead"/>
+</head>
+<body>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/lang/zh-CN.js"></script>
+<script charset="utf-8" src="__PUBLIC__/kindeditor-master/plugins/code/prettify.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/kindeditor-master/themes/default/default.css"/>
+<include file="Public:nav"/>
+
+<div class="formbody">
+
+    <div class="formtitle"><span>{$title}</span></div>
+
+    <div class="tab mt10" id="tabid1">
+        <form class="mainform" method="POST" action="{:U('Car/doAdd')}" enctype="multipart/form-data">
+            <table class="formtable">
+                <tbody>
+                <tr id="" class="">
+                    <td class="ft_title">车主id</td>
+                    <td colspan="3">
+                        <input value="{$model.user_id}" datatype="*" name="user_id" maxlength="50"
+                               class="bds inp  w500" nullmsg="请填写车主姓名" placeholder="请填写车主id" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写车主id</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">车牌号</td>
+                    <td colspan="3">
+                        <input value="{$model.car_number}" datatype="*" name="car_number" maxlength="50"
+                               class="bds inp  w500" nullmsg="请填写车牌号" placeholder="请填写车牌号" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写车牌号</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">押金</td>
+                    <td colspan="3">
+                        <input value="{$model.cash}" datatype="*" name="cash" maxlength="50" class="bds inp  w500"
+                               nullmsg="请填写押金" placeholder="请填写押金" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写押金</span>
+                    </td>
+                </tr>
+
+                <tr id="" class="">
+                    <td class="ft_title">座位</td>
+                    <td colspan="3">
+                        <select name="seat" datatype="*">
+                            <option value="" selected="selected">请选择座位</option>
+                            <foreach name="seat" item="vo">
+                                <option value="{$vo.seat_id}">{$vo.seat_name}</option>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择座位</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">品牌</td>
+                    <td colspan="3">
+                        <select name="brand" datatype="*">
+                            <option value="" selected="selected">请选择品牌</option>
+                            <foreach name="brand" item="vo">
+                                <option value="{$vo.brand_id}">{$vo.brand_name}</option>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择品牌</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">车型</td>
+                    <td colspan="3">
+                        <select name="carkind" datatype="*">
+                            <option value="" selected="selected">请选择车型</option>
+                            <foreach name="carkind" item="vo">
+                                <option value="{$vo.carkind_id}">{$vo.carkind_name}</option>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择车型</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">挂挡类型</td>
+                    <td colspan="3">
+                        <select name="gear" datatype="*">
+                            <option value="" selected="selected">请选择挂挡类型</option>
+                            <foreach name="gear" item="vo">
+                                <option value="{$vo.gear_id}">{$vo.gear_name}</option>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择挂挡类型</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">天窗类型</td>
+                    <td colspan="3">
+                        <select name="window" datatype="*">
+                            <option value="" selected="selected">请选择天窗类型</option>
+                            <foreach name="window" item="vo">
+                                <option value="{$vo.window_id}">{$vo.window_name}</option>
+                            </foreach>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择天窗类型</span>
+                    </td>
+                </tr>
+
+                <tr id="" class="">
+                    <td class="ft_title">公里数</td>
+                    <td colspan="3">
+                        <input value="{$model.intro.mileage}" name="mileage" maxlength="50" class="bds inp  w500"
+                               nullmsg="请填写公里数" placeholder="请填写公里数" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写公里数</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">生产日期</td>
+                    <td colspan="3">
+                        <input value="{$model.intro.production}" name="production" maxlength="50" class="bds inp  w500"
+                               nullmsg="请填写生产日期" placeholder="请填写生产日期" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写座位</span>
+                    </td>
+                </tr>
+
+                <tr id="" class="">
+                    <td class="ft_title">座位配置</td>
+                    <td colspan="3">
+                        <input value="{$model.intro.seat_kind}" name="seat_kind" maxlength="50" class="bds inp  w500"
+                               nullmsg="请填写座位配置" placeholder="请填写座位配置" type="text">
+                        <font class="need show_0"></font><span class="Validform_checktip">请填写座位配置</span>
+                    </td>
+                </tr>
+
+                <tr id="" class="">
+                    <td class="ft_title">自动应答</td>
+                    <td colspan="3">
+                        <select name="self">
+                            <eq name="model['intro']['self']" value="1">
+                                <option value="1" selected="selected">有</option>
+                                <option value="0">无</option>
+                                <else/>
+                                <option value="0" selected="selected">无</option>
+                                <option value="1">有</option>
+                            </eq>
+                        </select>
+                        <font class="need show_0"></font><span class="Validform_checktip">请选择有无</span>
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">封面</td>
+                    <td colspan="3">
+                        <style>
+                            .upimg_out {
+                                width: 70px;
+                                height: 70px;
+                                position: relative;
+                            }
+
+                            .upimg {
+                                width: 70px;
+                                height: 70px;
+                                display: block;
+                            }
+
+                            .upimg_btn {
+                                display: block;
+                                opacity: 0;
+                                position: absolute;
+                                width: 70px;
+                                height: 70px;
+                                left: 0;
+                                top: 0;
+                            }
+                        </style>
+                        <div class="file_holder ">
+                            <div class="upimg_out">
+                                <img src=" " class="upimg"/>
+                                <input type="text" id="image1" value="" name="pic" class="upimg_btn"/>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr id="" class="">
+                    <td class="ft_title">是否有效</td>
+                    <td colspan="3">
+                        <label><input type="radio" name="valid" value="1"
+                            <eq name="model['valid']|default=1" value="1">checked</eq>
+                            />是</label>
+                        &nbsp;&nbsp;
+                        <label><input type="radio" name="valid" value="0" datatype="*"
+                            <eq name="model['valid']" value="0">checked</eq>
+                            />否</label>
+                        <font class="need show_0">*</font><span class="Validform_checktip">请选择是否有效</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3">
+                        <input type="submit" value="保存" class="btn button_primary btnsave" status="1">
+                        <input type="button" value="返回" class="btn button_success btnsave"
+                               onclick="javascript:history.go(-1)"/>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <include file="Public:validformScript"/>
+    <div class="h10"></div>
+</div>
+<script>
+    KindEditor.ready(function (K) {
+        var editor = K.editor({
+            uploadJson: "{:U('Car/pic')}",
+            // fileManagerJson : '__PUBLIC__/kindeditor-master/php/file_manager_json.php',
+            // allowFileManager : true
+        });
+        K('#image1').click(function () {
+            editor.loadPlugin('image', function () {
+                editor.plugin.imageDialog({
+                    // showRemote : false,
+                    imageUrl: K('#url1').val(),
+                    clickFn: function (url, title, width, height, border, align) {
+                        console.log("url:" + url);
+                        K('#image1').val(url);
+                        K('.upimg').attr('src', url);
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+
+
+    });
+</script>
+
+</body>
+</html>
